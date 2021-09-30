@@ -173,27 +173,25 @@ def Run_TC_Image_Capture_Auto(ser, cmd, imgFormat):
     if (cmdName == 'HOST_CMD_CAPTURE'):
         writeCmd(ser, dctCmdList["HOST_CMD_IMG_TX"])
     # getdata image
-    loop = 1
-    if imgFormat == "BMP": loop = 6
-    i = 0
+
+    #loop = 6
+    #i = 0
+    #rawimagedata = ser.read(expected_len)
+    #while (i < loop and rawimagedata != b''):
     rawimagedata = ser.read(expected_len)
-    while (i < loop and rawimagedata != b''):
-      rawimagedata = ser.read(expected_len)
-      i = i + 1
-
-
-
-    result1 = verifyImageType(dctImgType, rawstringi, imgFormat)
-    if rawimagedata != "":
-        printResult("Verify image: ", True, str(expected_len), str(expected_len))
+    result2 = False
+    #  i = i + 1
+    while(rawimagedata != b''):
         result2 = True
+        rawimagedata = ser.read(expected_len)
+
+    if result2:
+        printResult("Verify image: ", True, str(expected_len), str(expected_len))
     else:
-        printResult("Verify image: ", False, str(expected_len), "null")
-        result2 = False
+        printResult("Verify image: ", False, str(expected_len), "empty")
+    result1 = verifyImageType(dctImgType, rawstringi, imgFormat)
 
     finalResult = result1 and result2
-
-    #time.sleep(5)
     end = time.time();
     total = CountTimeConsumer(start,end)
     if finalResult == True:
@@ -233,32 +231,24 @@ def Run_TC_Image_Capture_OnTrigger(ser, cmd, imgFormat):
     if (cmdName == "HOST_CMD_CAPTURE_ON_TRIGGER"):
         writeCmd(ser, dctCmdList["HOST_CMD_IMG_TX"])
     #get image data
-    loop = 1
-    if imgFormat == "BMP": loop = 6
-    i = 0
     rawimagedata = ser.read(expected_len)
-    if rawimagedata != b'':
+    result2 = False
+    while(rawimagedata != b''):
         result2 = True
-    else:
-        result2 = False
-    while (i < loop and rawimagedata != b''):
         rawimagedata = ser.read(expected_len)
-        i = i + 1
-
     if result2:
         printResult("Verify image: ", True, str(expected_len), str(expected_len))
     else:
-        printResult("Verify image: ", False, str(expected_len), "null")
-
+        printResult("Verify image: ", False, str(expected_len), "empty")
     result1 = verifyImageType(dctImgType, rawstringi, imgFormat)
     finalResult = result1 and result2
-    time.sleep(5)
-    if finalResult == True:
-        infoStr = "END SCENARIO: PASSED " + cmdName + " Image type: " + imgFormat
-    else:
-        infoStr = "END SCENARIO: FAILED " + cmdName + " Image type: " + imgFormat
     end = time.time()
-    CountTimeConsumer(start,end)
+    total = CountTimeConsumer(start, end)
+    if finalResult == True:
+        infoStr = "END SCENARIO: PASSED " + cmdName + " Image type: " + imgFormat + ", duration time: " + total
+    else:
+        infoStr = "END SCENARIO: FAILED " + cmdName + " Image type: " + imgFormat + ", duration time: " + total
+
     PrintAndWriteLog(infoStr, logging.INFO)
     PrintAndWriteLog("********************************************************************************\r")
 
@@ -273,7 +263,7 @@ def Run_TC_Image_MultiCapture_OnTrigger(ser, cmd, imgFormat):
 
     # Step 2: Don't get trigger and abort image
     writeCmd(ser, dctCmdList["HOST_CMD_ABORT_IMAGE_CAPTURE"])
-    time.sleep(3)
+    time.sleep(1)
     raw = doRead(ser, '\r'.encode('utf-8'), 10)
     printResult("Verify abort capture: ", verifyAbortCapture(raw.decode(), IMG_ABORT_MSG))
     time.sleep(1)
@@ -290,27 +280,20 @@ def Run_TC_Image_MultiCapture_OnTrigger(ser, cmd, imgFormat):
         rawstringi = doRead(ser, '\r'.encode('utf-8'), 10)
         resStr = "Scanner reponsed: " + str(rawstringi.decode('utf-8'))
         PrintAndWriteLog(resStr)
-        rawbuf = [char2hex(x) for x in raw[4:12]]
+        rawbuf = [char2hex(x) for x in rawstringi[4:12]]
         expected_len = hex2int(rawbuf)
 
         if (cmdName == "HOST_CMD_MULTIPLE_CAPTURE_ON_TRIGGER"):
             writeCmd(ser, dctCmdList["HOST_CMD_IMG_TX"])
-            #time.sleep(1)
-        #get imagedata raw
-        loop = 1
-        if imgFormat == "BMP": loop = 6
-        i = 0
         rawimagedata = ser.read(expected_len)
-        while (i < loop and rawimagedata != b''):
-            rawimagedata = ser.read(expected_len)
-            i = i + 1
-
-        if rawimagedata != b'':
-            printResult("Verify image: ", True, str(expected_len), str(expected_len))
+        result2 = False
+        while (rawimagedata != b''):
             result2 = True
+            rawimagedata = ser.read(expected_len)
+        if result2:
+            printResult("Verify image: ", True, str(expected_len), str(expected_len))
         else:
-            printResult("Verify image: ", False, str(expected_len), "null")
-            result2 = False
+            printResult("Verify image: ", False, str(expected_len), "empty")
         result1 = verifyImageType(dctImgType, rawstringi, imgFormat)
         result[x] = result1 and result2
 
@@ -318,17 +301,17 @@ def Run_TC_Image_MultiCapture_OnTrigger(ser, cmd, imgFormat):
 
     # Step 4: exit multi capture trigger
     writeCmd(ser, dctCmdList["HOST_CMD_ABORT_IMAGE_CAPTURE"])
-    time.sleep(3)
+    time.sleep(1)
     raw = doRead(ser, '\r'.encode('utf-8'), 10)
     printResult("Verify abort capture: ", verifyAbortCapture(raw.decode(), IMG_ABORT_MSG))
     time.sleep(1)
-
-    if finalResult == True:
-        infoStr = "END SCENARIO: PASSED " + cmdName + " Image type: " + imgFormat
-    else:
-        infoStr = "END SCENARIO: FAILED " + cmdName + " Image type: " + imgFormat
     end = time.time();
-    CountTimeConsumer()
+    total = CountTimeConsumer(start,end)
+    if finalResult == True:
+        infoStr = "END SCENARIO: PASSED " + cmdName + " Image type: " + imgFormat + ", duration time: " + total
+    else:
+        infoStr = "END SCENARIO: FAILED " + cmdName + " Image type: " + imgFormat + ", duration time: " + total
+
     PrintAndWriteLog(infoStr, logging.INFO)
     PrintAndWriteLog("********************************************************************************\r")
 
@@ -372,31 +355,25 @@ def Run_TC_Image_Capture_OnDecode(ser, cmd, imgFormat):
     if (cmdName == "HOST_CMD_CAPTURE_ON_DECODE"):
         writeCmd(ser, dctCmdList["HOST_CMD_IMG_TX"])
     #get imagedata
-    loop = 1
-    if imgFormat == "BMP": loop = 6
-    i = 0
     rawimagedata = ser.read(expected_len)
-    if rawimagedata !=b'':
+    result2 = False
+    while (rawimagedata != b''):
         result2 = True
-    else:
-        result2 = False
-    while (i < loop and rawimagedata != b''):
         rawimagedata = ser.read(expected_len)
-        i = i + 1
     if(result2):
         printResult("Verify image: ", True, str(expected_len), str(expected_len))
     else:
-        printResult("Verify image: ", False, str(expected_len), "null")
+        printResult("Verify image: ", False, str(expected_len), "empty")
 
     result1 = verifyImageType(dctImgType, rawstringi, imgFormat)
     finalResult = result1 and result2
-    time.sleep(5)
-    if finalResult == True:
-        infoStr = "END SCENARIO: PASSED " + cmdName + " Image type: " + imgFormat
-    else:
-        infoStr = "END SCENARIO: FAILED " + cmdName + " Image type: " + imgFormat
     end = time.time()
-    total = CountTimeConsumer()
+    total = CountTimeConsumer(start,end)
+    if finalResult == True:
+        infoStr = "END SCENARIO: PASSED " + cmdName + " Image type: " + imgFormat + ", duration time: " + total
+    else:
+        infoStr = "END SCENARIO: FAILED " + cmdName + " Image type: " + imgFormat + ", duration time: " + total
+
     PrintAndWriteLog(infoStr, logging.INFO)
     PrintAndWriteLog("********************************************************************************\r")
 
@@ -448,21 +425,15 @@ def Run_TC_Image_Capture_MultiCapture_OnDecode(ser, cmd, imgFormat):
         if (cmdName == "HOST_CMD_MULTIPLE_CAPTURE_ON_DECODE"):
             writeCmd(ser, dctCmdList["HOST_CMD_IMG_TX"])
 
-        loop = 1
-        if imgFormat == "BMP": loop = 6
-        i = 0
         rawimagedata = ser.read(expected_len)
-        if rawimagedata != b'':
+        result2 = False
+        while (rawimagedata != b''):
             result2 = True
-        else:
-            result2 = False
-        while (i < loop and rawimagedata != b''):
             rawimagedata = ser.read(expected_len)
-            i = i + 1
         if result2:
             printResult("Verify image: ", True, str(expected_len), str(expected_len))
         else:
-            printResult("Verify image: ", False, str(expected_len), "null")
+            printResult("Verify image: ", False, str(expected_len), "empty")
 
         result1 = verifyImageType(dctImgType, rawstringi, imgFormat)
         result[x] = result1 and result2
@@ -470,16 +441,17 @@ def Run_TC_Image_Capture_MultiCapture_OnDecode(ser, cmd, imgFormat):
     finalResult = result[0] and result[1]
      # Step exit multi capture trigger
     writeCmd(ser, dctCmdList["HOST_CMD_ABORT_IMAGE_CAPTURE"])
-    time.sleep(3)
+    time.sleep(1)
     raw = doRead(ser, '\r'.encode('utf-8'), 10)
     printResult("Verify abort capture: ", verifyAbortCapture(raw.decode(), IMG_ABORT_MSG))
     time.sleep(1)
-    if finalResult == True:
-        infoStr = "END SCENARIO: PASSED " + cmdName + " Image type: " + imgFormat
-    else:
-        infoStr = "END SCENARIO: FAILED " + cmdName + " Image type: " + imgFormat
     end = time.time()
-    CountTimeConsumer()
+    total = CountTimeConsumer(start,end)
+    if finalResult == True:
+        infoStr = "END SCENARIO: PASSED " + cmdName + " Image type: " + imgFormat + ", duration time: " + total
+    else:
+        infoStr = "END SCENARIO: FAILED " + cmdName + " Image type: " + imgFormat + ", duration time: " + total
+
     PrintAndWriteLog(infoStr, logging.INFO)
     PrintAndWriteLog("********************************************************************************\r")
 
@@ -507,15 +479,6 @@ if __name__ == '__main__':
     # configure the serial connections (the parameters differs on the device you are connecting to)
 
     filename = "ImageCaptureLog_" + datetime.now().strftime("%d%m%Y_%H%M") + '.txt'
-    #currentfolder = os.getcwd();
-    #folderLog = currentfolder + "\Log"
-    #if not os.path.exists(folderLog):
-    #   os.makedirs(folderLog)
-
-    #logfilepath = folderLog + "\\" + filename
-    #settingFile = currentfolder + "\\" + "Setting.xls"
-
-    #This part use to apply the hard code to C:\\HHS
     currentfolder = "C:\\HHS"
     folderLog = currentfolder + "\\Logs"
     if not os.path.exists(folderLog):
@@ -524,7 +487,6 @@ if __name__ == '__main__':
     settingFile = currentfolder + "\\Data\\" + "SettingImageCapture.xls"
     imagePath = currentfolder + "\\Data\\" + "UPCA_1.png"""
 
-    
     # Read excel file
     wbobj = DBv2.Excel(settingFile).openwb()
     commonws = DBv2.Excel(settingFile, "CommonSetting").openws(wbobj)
@@ -618,4 +580,4 @@ if __name__ == '__main__':
                                                        imgType)
                i = i + 1
     ser.close()
-    #parselog2.ParseLog(logfilepath)
+    parselog2.ParseLog(logfilepath)

@@ -1,0 +1,9 @@
+TESTCASE NAME 	IMAGE TYPE 	RESULT
+Image Capture Auto without HandShake	JPEG	PASSED
+Image Capture Auto without HandShake	JPEG	PASSED
+Image Capture Auto without HandShake	TIFF	PASSED
+Image Capture Auto without HandShake	TIFF	PASSED
+Image Capture Auto without HandShake	BMP	PASSED
+Image Capture Auto without HandShake	BMP	PASSED
+Image Capture Auto without HandShake	JPEG2000	FAILED
+Image Capture Auto without HandShake	JPEG2000	FAILED

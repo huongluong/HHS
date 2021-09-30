@@ -1,0 +1,232 @@
+2021-09-29 14:43:35,164 :: INFO :: START SCENARIO: HOST_CMD_CAPTURE_ON_TRIGGER Image type: JPEG
+2021-09-29 14:43:35,164 :: DEBUG :: Write command: b'$S,CIPFI00,Ar\r'
+2021-09-29 14:43:45,179 :: INFO :: Setting on scanner successfully and scanner reset
+2021-09-29 14:43:45,180 :: DEBUG :: Write command: b'x010000000000\r'
+2021-09-29 14:43:45,180 :: DEBUG :: Write command: b'x04012A2A0000\r'
+2021-09-29 14:43:48,196 :: INFO :: Verify abort capture: PASSED
+2021-09-29 14:43:49,213 :: DEBUG :: Write command: b'x010000000000\r'
+2021-09-29 14:43:50,225 :: DEBUG :: Write command: b'X\r'
+2021-09-29 14:43:50,464 :: DEBUG :: Scanner reponsed: $i01000197660336
+2021-09-29 14:43:50,464 :: DEBUG :: Write command: b'x03012A2A0000\r'
+2021-09-29 14:44:04,564 :: INFO :: Verify image: PASSED, expected: 104294, actual: 104294
+2021-09-29 14:44:04,564 :: INFO :: Verify image type: PASSED, expected: JPEG, actual: JPEG
+2021-09-29 14:44:04,564 :: INFO :: Time consume : 29.40
+2021-09-29 14:44:04,564 :: INFO :: END SCENARIO: PASSED HOST_CMD_CAPTURE_ON_TRIGGER Image type: JPEG, duration time: 29.40
+2021-09-29 14:44:04,564 :: DEBUG :: ********************************************************************************
+2021-09-29 14:44:04,564 :: INFO :: START SCENARIO: HOST_CMD_CAPTURE_ON_TRIGGER Image type: JPEG
+2021-09-29 14:44:04,564 :: DEBUG :: Write command: b'$S,CIPFI00,Ar\r'
+2021-09-29 14:44:14,564 :: INFO :: Setting on scanner successfully and scanner reset
+2021-09-29 14:44:14,564 :: DEBUG :: Write command: b'x010000000000\r'
+2021-09-29 14:44:14,564 :: DEBUG :: Write command: b'x04012A2A0000\r'
+2021-09-29 14:44:17,580 :: INFO :: Verify abort capture: PASSED
+2021-09-29 14:44:18,595 :: DEBUG :: Write command: b'x010000000000\r'
+2021-09-29 14:44:19,607 :: DEBUG :: Write command: b'X\r'
+2021-09-29 14:44:19,845 :: DEBUG :: Scanner reponsed: $i0100019BEC035D
+2021-09-29 14:44:19,845 :: DEBUG :: Write command: b'x03012A2A0000\r'
+2021-09-29 14:44:33,996 :: INFO :: Verify image: PASSED, expected: 105452, actual: 105452
+2021-09-29 14:44:33,996 :: INFO :: Verify image type: PASSED, expected: JPEG, actual: JPEG
+2021-09-29 14:44:33,996 :: INFO :: Time consume : 29.43
+2021-09-29 14:44:33,996 :: INFO :: END SCENARIO: PASSED HOST_CMD_CAPTURE_ON_TRIGGER Image type: JPEG, duration time: 29.43
+2021-09-29 14:44:33,996 :: DEBUG :: ********************************************************************************
+2021-09-29 14:44:33,997 :: INFO :: START SCENARIO: HOST_CMD_CAPTURE_ON_TRIGGER Image type: TIFF
+2021-09-29 14:44:33,997 :: DEBUG :: Write command: b'$S,CIPFI01,Ar\r'
+2021-09-29 14:44:44,014 :: INFO :: Setting on scanner successfully and scanner reset
+2021-09-29 14:44:44,014 :: DEBUG :: Write command: b'x010000000000\r'
+2021-09-29 14:44:44,014 :: DEBUG :: Write command: b'x04012A2A0000\r'
+2021-09-29 14:44:47,030 :: INFO :: Verify abort capture: PASSED
+2021-09-29 14:44:48,030 :: DEBUG :: Write command: b'x010000000000\r'
+2021-09-29 14:44:49,046 :: DEBUG :: Write command: b'X\r'
+2021-09-29 14:44:49,130 :: DEBUG :: Scanner reponsed: $i03000FB8F60367
+2021-09-29 14:44:49,130 :: DEBUG :: Write command: b'x03012A2A0000\r'
+2021-09-29 14:45:49,227 :: INFO :: Verify image: PASSED, expected: 1030390, actual: 1030390
+2021-09-29 14:45:49,227 :: INFO :: Verify image type: PASSED, expected: TIFF, actual: TIFF
+2021-09-29 14:45:49,227 :: INFO :: Time consume : 75.23
+2021-09-29 14:45:49,227 :: INFO :: END SCENARIO: PASSED HOST_CMD_CAPTURE_ON_TRIGGER Image type: TIFF, duration time: 75.23
+2021-09-29 14:45:49,227 :: DEBUG :: ********************************************************************************
+2021-09-29 14:45:49,227 :: INFO :: START SCENARIO: HOST_CMD_CAPTURE_ON_TRIGGER Image type: TIFF
+2021-09-29 14:45:49,227 :: DEBUG :: Write command: b'$S,CIPFI01,Ar\r'
+2021-09-29 14:45:59,230 :: INFO :: Setting on scanner successfully and scanner reset
+2021-09-29 14:45:59,231 :: DEBUG :: Write command: b'x010000000000\r'
+2021-09-29 14:45:59,231 :: DEBUG :: Write command: b'x04012A2A0000\r'
+2021-09-29 14:46:02,247 :: INFO :: Verify abort capture: PASSED
+2021-09-29 14:46:03,247 :: DEBUG :: Write command: b'x010000000000\r'
+2021-09-29 14:46:04,263 :: DEBUG :: Write command: b'X\r'
+2021-09-29 14:46:04,342 :: DEBUG :: Scanner reponsed: $i03000FB8F60367
+2021-09-29 14:46:04,342 :: DEBUG :: Write command: b'x03012A2A0000\r'
+2021-09-29 14:47:04,397 :: INFO :: Verify image: PASSED, expected: 1030390, actual: 1030390
+2021-09-29 14:47:04,397 :: INFO :: Verify image type: PASSED, expected: TIFF, actual: TIFF
+2021-09-29 14:47:04,397 :: INFO :: Time consume : 75.17
+2021-09-29 14:47:04,397 :: INFO :: END SCENARIO: PASSED HOST_CMD_CAPTURE_ON_TRIGGER Image type: TIFF, duration time: 75.17
+2021-09-29 14:47:04,397 :: DEBUG :: ********************************************************************************
+2021-09-29 14:47:04,397 :: INFO :: START SCENARIO: HOST_CMD_CAPTURE_ON_TRIGGER Image type: BMP
+2021-09-29 14:47:04,397 :: DEBUG :: Write command: b'$S,CIPFI02,Ar\r'
+2021-09-29 14:47:14,397 :: INFO :: Setting on scanner successfully and scanner reset
+2021-09-29 14:47:14,397 :: DEBUG :: Write command: b'x010000000000\r'
+2021-09-29 14:47:14,397 :: DEBUG :: Write command: b'x04012A2A0000\r'
+2021-09-29 14:47:17,414 :: INFO :: Verify abort capture: PASSED
+2021-09-29 14:47:18,431 :: DEBUG :: Write command: b'x010000000000\r'
+2021-09-29 14:47:19,442 :: DEBUG :: Write command: b'X\r'
+2021-09-29 14:47:19,542 :: DEBUG :: Scanner reponsed: $i00000FA436034C
+2021-09-29 14:47:19,542 :: DEBUG :: Write command: b'x03012A2A0000\r'
+2021-09-29 14:48:09,597 :: INFO :: Verify image: PASSED, expected: 1025078, actual: 1025078
+2021-09-29 14:48:09,597 :: INFO :: Verify image type: PASSED, expected: BMP, actual: BMP
+2021-09-29 14:48:09,597 :: INFO :: Time consume : 65.20
+2021-09-29 14:48:09,597 :: INFO :: END SCENARIO: PASSED HOST_CMD_CAPTURE_ON_TRIGGER Image type: BMP, duration time: 65.20
+2021-09-29 14:48:09,597 :: DEBUG :: ********************************************************************************
+2021-09-29 14:48:09,597 :: INFO :: START SCENARIO: HOST_CMD_CAPTURE_ON_TRIGGER Image type: BMP
+2021-09-29 14:48:09,597 :: DEBUG :: Write command: b'$S,CIPFI02,Ar\r'
+2021-09-29 14:48:19,613 :: INFO :: Setting on scanner successfully and scanner reset
+2021-09-29 14:48:19,613 :: DEBUG :: Write command: b'x010000000000\r'
+2021-09-29 14:48:19,614 :: DEBUG :: Write command: b'x04012A2A0000\r'
+2021-09-29 14:48:22,626 :: INFO :: Verify abort capture: PASSED
+2021-09-29 14:48:23,629 :: DEBUG :: Write command: b'x010000000000\r'
+2021-09-29 14:48:24,629 :: DEBUG :: Write command: b'X\r'
+2021-09-29 14:48:24,730 :: DEBUG :: Scanner reponsed: $i00000FA436034C
+2021-09-29 14:48:24,731 :: DEBUG :: Write command: b'x03012A2A0000\r'
+2021-09-29 14:49:14,792 :: INFO :: Verify image: PASSED, expected: 1025078, actual: 1025078
+2021-09-29 14:49:14,792 :: INFO :: Verify image type: PASSED, expected: BMP, actual: BMP
+2021-09-29 14:49:14,792 :: INFO :: Time consume : 65.20
+2021-09-29 14:49:14,792 :: INFO :: END SCENARIO: PASSED HOST_CMD_CAPTURE_ON_TRIGGER Image type: BMP, duration time: 65.20
+2021-09-29 14:49:14,792 :: DEBUG :: ********************************************************************************
+2021-09-29 14:49:14,792 :: INFO :: START SCENARIO: HOST_CMD_CAPTURE_ON_TRIGGER Image type: JPEG2000
+2021-09-29 14:49:14,792 :: DEBUG :: Write command: b'$S,CIPFI00,Ar\r'
+2021-09-29 14:49:24,796 :: INFO :: Setting on scanner successfully and scanner reset
+2021-09-29 14:49:24,797 :: DEBUG :: Write command: b'x010000000000\r'
+2021-09-29 14:49:24,797 :: DEBUG :: Write command: b'x04012A2A0000\r'
+2021-09-29 14:49:27,808 :: INFO :: Verify abort capture: PASSED
+2021-09-29 14:49:28,811 :: DEBUG :: Write command: b'x010000000000\r'
+2021-09-29 14:49:29,812 :: DEBUG :: Write command: b'X\r'
+2021-09-29 14:49:30,064 :: DEBUG :: Scanner reponsed: $i01000197FF0356
+2021-09-29 14:49:30,064 :: DEBUG :: Write command: b'x03012A2A0000\r'
+2021-09-29 14:49:44,163 :: INFO :: Verify image: PASSED, expected: 104447, actual: 104447
+2021-09-29 14:49:44,163 :: INFO :: Verify image type: FAILED, expected: JPEG2000, actual: JPEG
+2021-09-29 14:49:44,163 :: INFO :: Time consume : 29.37
+2021-09-29 14:49:44,163 :: INFO :: END SCENARIO: FAILED HOST_CMD_CAPTURE_ON_TRIGGER Image type: JPEG2000, duration time: 29.37
+2021-09-29 14:49:44,163 :: DEBUG :: ********************************************************************************
+2021-09-29 14:49:44,163 :: INFO :: START SCENARIO: HOST_CMD_CAPTURE_ON_TRIGGER Image type: JPEG2000
+2021-09-29 14:49:44,163 :: DEBUG :: Write command: b'$S,CIPFI00,Ar\r'
+2021-09-29 14:49:54,164 :: INFO :: Setting on scanner successfully and scanner reset
+2021-09-29 14:49:54,164 :: DEBUG :: Write command: b'x010000000000\r'
+2021-09-29 14:49:54,164 :: DEBUG :: Write command: b'x04012A2A0000\r'
+2021-09-29 14:49:57,179 :: INFO :: Verify abort capture: PASSED
+2021-09-29 14:49:58,188 :: DEBUG :: Write command: b'x010000000000\r'
+2021-09-29 14:49:59,196 :: DEBUG :: Write command: b'X\r'
+2021-09-29 14:49:59,447 :: DEBUG :: Scanner reponsed: $i0100019B06033B
+2021-09-29 14:49:59,447 :: DEBUG :: Write command: b'x03012A2A0000\r'
+2021-09-29 14:50:13,580 :: INFO :: Verify image: PASSED, expected: 105222, actual: 105222
+2021-09-29 14:50:13,580 :: INFO :: Verify image type: FAILED, expected: JPEG2000, actual: JPEG
+2021-09-29 14:50:13,580 :: INFO :: Time consume : 29.42
+2021-09-29 14:50:13,580 :: INFO :: END SCENARIO: FAILED HOST_CMD_CAPTURE_ON_TRIGGER Image type: JPEG2000, duration time: 29.42
+2021-09-29 14:50:13,580 :: DEBUG :: ********************************************************************************
+2021-09-29 14:50:13,580 :: INFO :: START SCENARIO: HOST_CMD_CAPTURE_ON_TRIGGER_NO_HANDSHAKE Image type: JPEG
+2021-09-29 14:50:13,580 :: DEBUG :: Write command: b'$S,CIPFI00,Ar\r'
+2021-09-29 14:50:23,580 :: INFO :: Setting on scanner successfully and scanner reset
+2021-09-29 14:50:23,580 :: DEBUG :: Write command: b'x018110100000\r'
+2021-09-29 14:50:23,580 :: DEBUG :: Write command: b'x04012A2A0000\r'
+2021-09-29 14:50:26,586 :: INFO :: Verify abort capture: PASSED
+2021-09-29 14:50:27,597 :: DEBUG :: Write command: b'x018110100000\r'
+2021-09-29 14:50:28,613 :: DEBUG :: Write command: b'X\r'
+2021-09-29 14:50:28,998 :: DEBUG :: Scanner reponsed: $i01000160250327
+2021-09-29 14:50:42,386 :: INFO :: Verify image: PASSED, expected: 90149, actual: 90149
+2021-09-29 14:50:42,386 :: INFO :: Verify image type: PASSED, expected: JPEG, actual: JPEG
+2021-09-29 14:50:42,386 :: INFO :: Time consume : 28.81
+2021-09-29 14:50:42,386 :: INFO :: END SCENARIO: PASSED HOST_CMD_CAPTURE_ON_TRIGGER_NO_HANDSHAKE Image type: JPEG, duration time: 28.81
+2021-09-29 14:50:42,386 :: DEBUG :: ********************************************************************************
+2021-09-29 14:50:42,386 :: INFO :: START SCENARIO: HOST_CMD_CAPTURE_ON_TRIGGER_NO_HANDSHAKE Image type: JPEG
+2021-09-29 14:50:42,386 :: DEBUG :: Write command: b'$S,CIPFI00,Ar\r'
+2021-09-29 14:50:52,396 :: INFO :: Setting on scanner successfully and scanner reset
+2021-09-29 14:50:52,396 :: DEBUG :: Write command: b'x018110100000\r'
+2021-09-29 14:50:52,396 :: DEBUG :: Write command: b'x04012A2A0000\r'
+2021-09-29 14:50:55,403 :: INFO :: Verify abort capture: PASSED
+2021-09-29 14:50:56,405 :: DEBUG :: Write command: b'x018110100000\r'
+2021-09-29 14:50:57,407 :: DEBUG :: Write command: b'X\r'
+2021-09-29 14:50:57,792 :: DEBUG :: Scanner reponsed: $i01000162410327
+2021-09-29 14:51:11,239 :: INFO :: Verify image: PASSED, expected: 90689, actual: 90689
+2021-09-29 14:51:11,239 :: INFO :: Verify image type: PASSED, expected: JPEG, actual: JPEG
+2021-09-29 14:51:11,239 :: INFO :: Time consume : 28.85
+2021-09-29 14:51:11,239 :: INFO :: END SCENARIO: PASSED HOST_CMD_CAPTURE_ON_TRIGGER_NO_HANDSHAKE Image type: JPEG, duration time: 28.85
+2021-09-29 14:51:11,239 :: DEBUG :: ********************************************************************************
+2021-09-29 14:51:11,239 :: INFO :: START SCENARIO: HOST_CMD_CAPTURE_ON_TRIGGER_NO_HANDSHAKE Image type: TIFF
+2021-09-29 14:51:11,239 :: DEBUG :: Write command: b'$S,CIPFI01,Ar\r'
+2021-09-29 14:51:21,246 :: INFO :: Setting on scanner successfully and scanner reset
+2021-09-29 14:51:21,246 :: DEBUG :: Write command: b'x018110100000\r'
+2021-09-29 14:51:21,247 :: DEBUG :: Write command: b'x04012A2A0000\r'
+2021-09-29 14:51:24,256 :: INFO :: Verify abort capture: PASSED
+2021-09-29 14:51:25,271 :: DEBUG :: Write command: b'x018110100000\r'
+2021-09-29 14:51:26,274 :: DEBUG :: Write command: b'X\r'
+2021-09-29 14:51:26,602 :: DEBUG :: Scanner reponsed: $i03000FB8F60367
+2021-09-29 14:52:16,646 :: INFO :: Verify image: PASSED, expected: 1030390, actual: 1030390
+2021-09-29 14:52:16,646 :: INFO :: Verify image type: PASSED, expected: TIFF, actual: TIFF
+2021-09-29 14:52:16,646 :: INFO :: Time consume : 65.41
+2021-09-29 14:52:16,646 :: INFO :: END SCENARIO: PASSED HOST_CMD_CAPTURE_ON_TRIGGER_NO_HANDSHAKE Image type: TIFF, duration time: 65.41
+2021-09-29 14:52:16,647 :: DEBUG :: ********************************************************************************
+2021-09-29 14:52:16,647 :: INFO :: START SCENARIO: HOST_CMD_CAPTURE_ON_TRIGGER_NO_HANDSHAKE Image type: TIFF
+2021-09-29 14:52:16,647 :: DEBUG :: Write command: b'$S,CIPFI01,Ar\r'
+2021-09-29 14:52:26,659 :: INFO :: Setting on scanner successfully and scanner reset
+2021-09-29 14:52:26,659 :: DEBUG :: Write command: b'x018110100000\r'
+2021-09-29 14:52:26,660 :: DEBUG :: Write command: b'x04012A2A0000\r'
+2021-09-29 14:52:29,675 :: INFO :: Verify abort capture: PASSED
+2021-09-29 14:52:30,680 :: DEBUG :: Write command: b'x018110100000\r'
+2021-09-29 14:52:31,694 :: DEBUG :: Write command: b'X\r'
+2021-09-29 14:52:31,977 :: DEBUG :: Scanner reponsed: $i03000FB8F60367
+2021-09-29 14:53:32,028 :: INFO :: Verify image: PASSED, expected: 1030390, actual: 1030390
+2021-09-29 14:53:32,028 :: INFO :: Verify image type: PASSED, expected: TIFF, actual: TIFF
+2021-09-29 14:53:32,028 :: INFO :: Time consume : 75.38
+2021-09-29 14:53:32,029 :: INFO :: END SCENARIO: PASSED HOST_CMD_CAPTURE_ON_TRIGGER_NO_HANDSHAKE Image type: TIFF, duration time: 75.38
+2021-09-29 14:53:32,029 :: DEBUG :: ********************************************************************************
+2021-09-29 14:53:32,029 :: INFO :: START SCENARIO: HOST_CMD_CAPTURE_ON_TRIGGER_NO_HANDSHAKE Image type: BMP
+2021-09-29 14:53:32,029 :: DEBUG :: Write command: b'$S,CIPFI02,Ar\r'
+2021-09-29 14:53:42,032 :: INFO :: Setting on scanner successfully and scanner reset
+2021-09-29 14:53:42,033 :: DEBUG :: Write command: b'x018110100000\r'
+2021-09-29 14:53:42,033 :: DEBUG :: Write command: b'x04012A2A0000\r'
+2021-09-29 14:53:45,038 :: INFO :: Verify abort capture: PASSED
+2021-09-29 14:53:46,050 :: DEBUG :: Write command: b'x018110100000\r'
+2021-09-29 14:53:47,067 :: DEBUG :: Write command: b'X\r'
+2021-09-29 14:53:47,375 :: DEBUG :: Scanner reponsed: $i00000FA436034C
+2021-09-29 14:54:37,436 :: INFO :: Verify image: PASSED, expected: 1025078, actual: 1025078
+2021-09-29 14:54:37,436 :: INFO :: Verify image type: PASSED, expected: BMP, actual: BMP
+2021-09-29 14:54:37,436 :: INFO :: Time consume : 65.41
+2021-09-29 14:54:37,436 :: INFO :: END SCENARIO: PASSED HOST_CMD_CAPTURE_ON_TRIGGER_NO_HANDSHAKE Image type: BMP, duration time: 65.41
+2021-09-29 14:54:37,436 :: DEBUG :: ********************************************************************************
+2021-09-29 14:54:37,436 :: INFO :: START SCENARIO: HOST_CMD_CAPTURE_ON_TRIGGER_NO_HANDSHAKE Image type: BMP
+2021-09-29 14:54:37,436 :: DEBUG :: Write command: b'$S,CIPFI02,Ar\r'
+2021-09-29 14:54:47,441 :: INFO :: Setting on scanner successfully and scanner reset
+2021-09-29 14:54:47,441 :: DEBUG :: Write command: b'x018110100000\r'
+2021-09-29 14:54:47,441 :: DEBUG :: Write command: b'x04012A2A0000\r'
+2021-09-29 14:54:50,450 :: INFO :: Verify abort capture: PASSED
+2021-09-29 14:54:51,464 :: DEBUG :: Write command: b'x018110100000\r'
+2021-09-29 14:54:52,478 :: DEBUG :: Write command: b'X\r'
+2021-09-29 14:54:52,777 :: DEBUG :: Scanner reponsed: $i00000FA436034C
+2021-09-29 14:55:42,828 :: INFO :: Verify image: PASSED, expected: 1025078, actual: 1025078
+2021-09-29 14:55:42,828 :: INFO :: Verify image type: PASSED, expected: BMP, actual: BMP
+2021-09-29 14:55:42,828 :: INFO :: Time consume : 65.39
+2021-09-29 14:55:42,828 :: INFO :: END SCENARIO: PASSED HOST_CMD_CAPTURE_ON_TRIGGER_NO_HANDSHAKE Image type: BMP, duration time: 65.39
+2021-09-29 14:55:42,829 :: DEBUG :: ********************************************************************************
+2021-09-29 14:55:42,829 :: INFO :: START SCENARIO: HOST_CMD_CAPTURE_ON_TRIGGER_NO_HANDSHAKE Image type: JPEG2000
+2021-09-29 14:55:42,829 :: DEBUG :: Write command: b'$S,CIPFI00,Ar\r'
+2021-09-29 14:55:52,840 :: INFO :: Setting on scanner successfully and scanner reset
+2021-09-29 14:55:52,840 :: DEBUG :: Write command: b'x018110100000\r'
+2021-09-29 14:55:52,840 :: DEBUG :: Write command: b'x04012A2A0000\r'
+2021-09-29 14:55:55,855 :: INFO :: Verify abort capture: PASSED
+2021-09-29 14:55:56,866 :: DEBUG :: Write command: b'x018110100000\r'
+2021-09-29 14:55:57,871 :: DEBUG :: Write command: b'X\r'
+2021-09-29 14:55:58,272 :: DEBUG :: Scanner reponsed: $i0100016283032D
+2021-09-29 14:56:11,672 :: INFO :: Verify image: PASSED, expected: 90755, actual: 90755
+2021-09-29 14:56:11,672 :: INFO :: Verify image type: FAILED, expected: JPEG2000, actual: JPEG
+2021-09-29 14:56:11,672 :: INFO :: Time consume : 28.84
+2021-09-29 14:56:11,672 :: INFO :: END SCENARIO: FAILED HOST_CMD_CAPTURE_ON_TRIGGER_NO_HANDSHAKE Image type: JPEG2000, duration time: 28.84
+2021-09-29 14:56:11,672 :: DEBUG :: ********************************************************************************
+2021-09-29 14:56:11,672 :: INFO :: START SCENARIO: HOST_CMD_CAPTURE_ON_TRIGGER_NO_HANDSHAKE Image type: JPEG2000
+2021-09-29 14:56:11,673 :: DEBUG :: Write command: b'$S,CIPFI00,Ar\r'
+2021-09-29 14:56:21,682 :: INFO :: Setting on scanner successfully and scanner reset
+2021-09-29 14:56:21,683 :: DEBUG :: Write command: b'x018110100000\r'
+2021-09-29 14:56:21,683 :: DEBUG :: Write command: b'x04012A2A0000\r'
+2021-09-29 14:56:24,688 :: INFO :: Verify abort capture: PASSED
+2021-09-29 14:56:25,689 :: DEBUG :: Write command: b'x018110100000\r'
+2021-09-29 14:56:26,702 :: DEBUG :: Write command: b'X\r'
+2021-09-29 14:56:27,099 :: DEBUG :: Scanner reponsed: $i01000160AC0344
+2021-09-29 14:56:40,488 :: INFO :: Verify image: PASSED, expected: 90284, actual: 90284
+2021-09-29 14:56:40,488 :: INFO :: Verify image type: FAILED, expected: JPEG2000, actual: JPEG
+2021-09-29 14:56:40,488 :: INFO :: Time consume : 28.82
+2021-09-29 14:56:40,488 :: INFO :: END SCENARIO: FAILED HOST_CMD_CAPTURE_ON_TRIGGER_NO_HANDSHAKE Image type: JPEG2000, duration time: 28.82
+2021-09-29 14:56:40,489 :: DEBUG :: ********************************************************************************

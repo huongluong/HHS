@@ -1,0 +1,26 @@
+2021-09-28 17:24:59,908 :: INFO :: START SCENARIO: HOST_CMD_CAPTURE_ON_TRIGGER Image type: BMP
+2021-09-28 17:24:59,908 :: DEBUG :: Write command: b'$S,CIPFI02,Ar\r'
+2021-09-28 17:25:09,924 :: INFO :: Setting on scanner successfully and scanner reset
+2021-09-28 17:25:09,924 :: DEBUG :: Write command: b'x010140400001\r'
+2021-09-28 17:25:09,924 :: DEBUG :: Write command: b'x04012A2A0000\r'
+2021-09-28 17:25:12,941 :: INFO :: Verify abort capture: PASSED
+2021-09-28 17:25:13,957 :: DEBUG :: Write command: b'x010140400001\r'
+2021-09-28 17:25:14,974 :: DEBUG :: Write command: b'X\r'
+2021-09-28 17:25:15,058 :: DEBUG :: Scanner reponsed: $i00000FA436034C
+2021-09-28 17:25:15,058 :: INFO :: Verify image type: PASSED, expected: BMP, actual: BMP
+2021-09-28 17:25:25,074 :: INFO :: Verify image: PASSED, expected: 1025078, actual: 1025078
+2021-09-28 17:25:30,090 :: INFO :: END SCENARIO: PASSED HOST_CMD_CAPTURE_ON_TRIGGER Image type: BMP
+2021-09-28 17:25:30,090 :: DEBUG :: ********************************************************************************
+2021-09-28 17:25:30,091 :: INFO :: START SCENARIO: HOST_CMD_CAPTURE_ON_TRIGGER_NO_HANDSHAKE Image type: BMP
+2021-09-28 17:25:30,091 :: DEBUG :: Write command: b'$S,CIPFI02,Ar\r'
+2021-09-28 17:25:40,108 :: INFO :: Setting on scanner successfully and scanner reset
+2021-09-28 17:25:40,108 :: DEBUG :: Write command: b'x018110100000\r'
+2021-09-28 17:25:40,108 :: DEBUG :: Write command: b'x04012A2A0000\r'
+2021-09-28 17:25:43,125 :: INFO :: Verify abort capture: PASSED
+2021-09-28 17:25:44,125 :: DEBUG :: Write command: b'x018110100000\r'
+2021-09-28 17:25:45,141 :: DEBUG :: Write command: b'X\r'
+2021-09-28 17:25:45,425 :: DEBUG :: Scanner reponsed: $i00000FA436034C
+2021-09-28 17:25:45,440 :: INFO :: Verify image type: PASSED, expected: BMP, actual: BMP
+2021-09-28 17:26:35,514 :: INFO :: Verify image: PASSED, expected: 1025078, actual: 1025078
+2021-09-28 17:26:40,541 :: INFO :: END SCENARIO: PASSED HOST_CMD_CAPTURE_ON_TRIGGER_NO_HANDSHAKE Image type: BMP
+2021-09-28 17:26:40,541 :: DEBUG :: ********************************************************************************

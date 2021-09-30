@@ -1,0 +1,80 @@
+TESTCASE NAME 	IMAGE TYPE 	RESULT
+Image Capture Auto	JPEG	PASSED
+Image Capture Auto	JPEG	PASSED
+Image Capture Auto	JPEG	PASSED
+Image Capture Auto	TIFF	PASSED
+Image Capture Auto	TIFF	PASSED
+Image Capture Auto	TIFF	PASSED
+Image Capture Auto	BMP	PASSED
+Image Capture Auto	BMP	PASSED
+Image Capture Auto	BMP	PASSED
+Image Capture Auto	JPEG2000	FAILED
+Image Capture Auto	JPEG2000	FAILED
+Image Capture Auto	JPEG2000	FAILED
+Image Capture Auto without HandShake	JPEG	PASSED
+Image Capture Auto without HandShake	JPEG	PASSED
+Image Capture Auto without HandShake	JPEG	PASSED
+Image Capture Auto without HandShake	TIFF	PASSED
+Image Capture Auto without HandShake	TIFF	FAILED
+Image Capture Auto without HandShake	TIFF	FAILED
+Image Capture Auto without HandShake	BMP	FAILED
+Image Capture Auto without HandShake	BMP	FAILED
+Image Capture Auto without HandShake	BMP	FAILED
+Image Capture Auto without HandShake	JPEG2000	FAILED
+Image Capture Auto without HandShake	JPEG2000	FAILED
+Image Capture Auto without HandShake	JPEG2000	FAILED
+Single Capture on Trigger	JPEG	PASSED
+Single Capture on Trigger	JPEG	PASSED
+Single Capture on Trigger	JPEG	PASSED
+Single Capture on Trigger	TIFF	PASSED
+Single Capture on Trigger	TIFF	PASSED
+Single Capture on Trigger	TIFF	PASSED
+Single Capture on Trigger	BMP	PASSED
+Single Capture on Trigger	BMP	PASSED
+Single Capture on Trigger	BMP	PASSED
+Single Capture on Trigger	JPEG2000	FAILED
+Single Capture on Trigger	JPEG2000	FAILED
+Single Capture on Trigger	JPEG2000	FAILED
+Single Capture on Trigger without HandShake	JPEG	FAILED
+Single Capture on Trigger without HandShake	JPEG	FAILED
+Single Capture on Trigger without HandShake	JPEG	FAILED
+Single Capture on Trigger without HandShake	TIFF	FAILED
+Single Capture on Trigger without HandShake	TIFF	PASSED
+Single Capture on Trigger without HandShake	TIFF	FAILED
+Single Capture on Trigger without HandShake	BMP	FAILED
+Single Capture on Trigger without HandShake	BMP	FAILED
+Single Capture on Trigger without HandShake	BMP	FAILED
+Single Capture on Trigger without HandShake	JPEG2000	FAILED
+Single Capture on Trigger without HandShake	JPEG2000	FAILED
+Single Capture on Trigger without HandShake	JPEG2000	FAILED
+Multiple Capture on Trigger	JPEG	PASSED
+Multiple Capture on Trigger	JPEG	PASSED
+Multiple Capture on Trigger	JPEG	PASSED
+Multiple Capture on Trigger	TIFF	PASSED
+Multiple Capture on Trigger	TIFF	PASSED
+Multiple Capture on Trigger	TIFF	PASSED
+Multiple Capture on Trigger	BMP	PASSED
+Multiple Capture on Trigger	BMP	PASSED
+Multiple Capture on Trigger	BMP	PASSED
+Multiple Capture on Trigger	JPEG2000	FAILED
+Multiple Capture on Trigger	JPEG2000	FAILED
+Multiple Capture on Trigger	JPEG2000	FAILED
+Multiple Capture on Trigger without HandShake	JPEG	PASSED
+Multiple Capture on Trigger without HandShake	JPEG	PASSED
+Multiple Capture on Trigger without HandShake	JPEG	PASSED
+Multiple Capture on Trigger without HandShake	TIFF	FAILED
+Multiple Capture on Trigger without HandShake	TIFF	FAILED
+Multiple Capture on Trigger without HandShake	TIFF	FAILED
+Multiple Capture on Trigger without HandShake	BMP	FAILED
+Multiple Capture on Trigger without HandShake	BMP	FAILED
+Multiple Capture on Trigger without HandShake	BMP	FAILED
+Multiple Capture on Trigger without HandShake	JPEG2000	FAILED
+Multiple Capture on Trigger without HandShake	JPEG2000	FAILED
+Multiple Capture on Trigger without HandShake	JPEG2000	FAILED
+Single Capture on Decode	JPEG	FAILED
+Single Capture on Decode	JPEG	FAILED
+Single Capture on Decode	JPEG	FAILED
+Single Capture on Decode	TIFF	FAILED
+Single Capture on Decode	TIFF	FAILED
+Single Capture on Decode	TIFF	FAILED
+Single Capture on Decode	BMP	FAILED

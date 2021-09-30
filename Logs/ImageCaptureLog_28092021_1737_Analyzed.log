@@ -1,0 +1,3 @@
+TESTCASE NAME 	IMAGE TYPE 	RESULT
+Multiple Capture on Trigger	BMP	PASSED
+Multiple Capture on Trigger without HandShake	BMP	PASSED

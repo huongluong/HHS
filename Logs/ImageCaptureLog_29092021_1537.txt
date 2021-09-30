@@ -1,0 +1,27 @@
+2021-09-29 15:37:25,747 :: INFO :: START SCENARIO: HOST_CMD_CAPTURE_ON_DECODE, Image type: JPEG
+2021-09-29 15:37:25,747 :: DEBUG :: Write command: b'$S,CIPFI00,Ar\r'
+2021-09-29 15:37:35,756 :: INFO :: Setting on scanner successfully and scanner reset
+2021-09-29 15:37:35,756 :: DEBUG :: Write command: b'x02012A2A0000\r'
+2021-09-29 15:37:35,756 :: DEBUG :: Write command: b'x04012A2A0000\r'
+2021-09-29 15:37:38,763 :: INFO :: Verify abort capture: PASSED
+2021-09-29 15:37:39,778 :: DEBUG :: Write command: b'x02012A2A0000\r'
+2021-09-29 15:37:41,392 :: DEBUG :: Write command: b'X\r'
+2021-09-29 15:37:42,564 :: DEBUG :: Scanner reponsed: A123456789012
+2021-09-29 15:37:42,564 :: DEBUG :: Scanner reponsed: $i010000930F033B
+2021-09-29 15:37:42,564 :: DEBUG :: Write command: b'x03012A2A0000\r'
+2021-09-29 15:37:52,571 :: INFO :: Verify image: FAILED, expected: 37647, actual: empty
+2021-09-29 15:37:52,571 :: INFO :: Verify image type: PASSED, expected: JPEG, actual: JPEG
+2021-09-29 15:37:52,571 :: INFO :: Time consume : 26.82
+2021-09-29 15:37:52,571 :: INFO :: END SCENARIO: FAILED HOST_CMD_CAPTURE_ON_DECODE Image type: JPEG, duration time: 26.82
+2021-09-29 15:37:52,571 :: DEBUG :: ********************************************************************************
+2021-09-29 15:37:52,571 :: INFO :: START SCENARIO: HOST_CMD_CAPTURE_ON_DECODE, Image type: JPEG
+2021-09-29 15:37:52,571 :: DEBUG :: Write command: b'$S,CIPFI00,Ar\r'
+2021-09-29 15:38:02,575 :: INFO :: Setting on scanner successfully and scanner reset
+2021-09-29 15:38:02,575 :: DEBUG :: Write command: b'x02012A2A0000\r'
+2021-09-29 15:38:02,575 :: DEBUG :: Write command: b'x04012A2A0000\r'
+2021-09-29 15:38:15,589 :: INFO :: Verify abort capture: FAILED
+2021-09-29 15:38:16,592 :: DEBUG :: Write command: b'x02012A2A0000\r'
+2021-09-29 15:38:18,031 :: DEBUG :: Write command: b'X\r'
+2021-09-29 15:38:19,197 :: DEBUG :: Scanner reponsed: A123456789012
+2021-09-29 15:38:19,251 :: DEBUG :: Scanner reponsed: $i0100007EF3034E
+2021-09-29 15:38:19,251 :: DEBUG :: Write command: b'x03012A2A0000\r'

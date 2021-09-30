@@ -1,0 +1,10 @@
+2021-09-29 11:14:24,231 :: INFO :: START SCENARIO: HOST_CMD_CAPTURE, Image type: JPEG
+2021-09-29 11:14:24,231 :: DEBUG :: Write command: b'$S,CIPFI00,Ar\r'
+2021-09-29 11:14:34,246 :: INFO :: Setting on scanner successfully and scanner reset
+2021-09-29 11:14:34,246 :: DEBUG :: Write command: b'x00012A2A0000\r'
+2021-09-29 11:14:44,251 :: DEBUG :: Scanner reponsed: 
+2021-09-29 11:14:44,251 :: DEBUG :: Write command: b'x03012A2A0000\r'
+2021-09-29 11:14:44,251 :: INFO :: Verify image type: FAILED, expected: JPEG, actual: 
+2021-09-29 11:14:44,251 :: INFO :: Verify image: PASSED, expected: 0, actual: 0
+2021-09-29 11:14:49,262 :: INFO :: END SCENARIO: FAILED HOST_CMD_CAPTURE Image type: JPEG
+2021-09-29 11:14:49,263 :: DEBUG :: ********************************************************************************

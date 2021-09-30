@@ -1,0 +1,20 @@
+2021-09-27 16:49:57,683 :: INFO :: START SCENARIO: HOST_CMD_CAPTURE, Image type: JPEG
+2021-09-27 16:49:57,683 :: DEBUG :: Write command: b'$S,CIPFI00,Ar\r'
+2021-09-27 16:50:07,700 :: INFO :: Setting on scanner successfully and scanner reset
+2021-09-27 16:50:07,700 :: DEBUG :: Write command: b'x00012A2A0000\r'
+2021-09-27 16:50:07,700 :: DEBUG :: Write command: b'x03012A2A0000\r'
+2021-09-27 16:50:07,997 :: DEBUG :: Scanner reponsed: $i010002791E0341
+2021-09-27 16:50:07,997 :: INFO :: Verify image type: PASSED, expected: JPEG, actual: JPEG
+2021-09-27 16:50:17,998 :: INFO :: Verify image: PASSED, expected: 162078, actual: 162078
+2021-09-27 16:50:23,016 :: INFO :: END SCENARIO: PASSED HOST_CMD_CAPTURE Image type: JPEG
+2021-09-27 16:50:23,016 :: DEBUG :: ********************************************************************************
+2021-09-27 16:50:23,016 :: INFO :: START SCENARIO: HOST_CMD_CAPTURE, Image type: BMP
+2021-09-27 16:50:23,016 :: DEBUG :: Write command: b'$S,CIPFI02,Ar\r'
+2021-09-27 16:50:33,033 :: INFO :: Setting on scanner successfully and scanner reset
+2021-09-27 16:50:33,033 :: DEBUG :: Write command: b'x00012A2A0000\r'
+2021-09-27 16:50:33,033 :: DEBUG :: Write command: b'x03012A2A0000\r'
+2021-09-27 16:50:33,168 :: DEBUG :: Scanner reponsed: $i00000FA436034C
+2021-09-27 16:50:33,168 :: INFO :: Verify image type: PASSED, expected: BMP, actual: BMP
+2021-09-27 16:50:43,183 :: INFO :: Verify image: PASSED, expected: 1025078, actual: 1025078
+2021-09-27 16:50:48,190 :: INFO :: END SCENARIO: PASSED HOST_CMD_CAPTURE Image type: BMP
+2021-09-27 16:50:48,191 :: DEBUG :: ********************************************************************************

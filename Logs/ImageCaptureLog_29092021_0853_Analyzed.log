@@ -1,0 +1,11 @@
+TESTCASE NAME 	IMAGE TYPE 	RESULT
+Image Capture Auto	BMP	FAILED
+Image Capture Auto without HandShake	BMP	PASSED
+Single Capture on Trigger	BMP	PASSED
+Single Capture on Trigger without HandShake	BMP	PASSED
+Multiple Capture on Trigger	BMP	PASSED
+Multiple Capture on Trigger without HandShake	BMP	PASSED
+Single Capture on Decode	BMP	PASSED
+Single Capture on Decode without HandShake	BMP	PASSED
+Multiple Capture on Decode	BMP	PASSED
+Multiple Capture on Decode without HandShake	BMP	PASSED

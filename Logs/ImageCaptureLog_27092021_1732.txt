@@ -1,0 +1,28 @@
+2021-09-27 17:32:46,583 :: INFO :: START SCENARIO: HOST_CMD_CAPTURE_ON_DECODE_NO_HANDSHAKE, Image type: JPEG
+2021-09-27 17:32:46,583 :: DEBUG :: Write command: b'$S,CIPFI00,Ar\r'
+2021-09-27 17:32:56,599 :: INFO :: Setting on scanner successfully and scanner reset
+2021-09-27 17:32:56,599 :: DEBUG :: Write command: b'x028000000000\r'
+2021-09-27 17:32:56,599 :: DEBUG :: Write command: b'x04012A2A0000\r'
+2021-09-27 17:32:59,615 :: INFO :: Verify abort capture: PASSED
+2021-09-27 17:33:00,616 :: DEBUG :: Write command: b'x028000000000\r'
+2021-09-27 17:33:02,116 :: DEBUG :: Write command: b'X\r'
+2021-09-27 17:33:07,375 :: DEBUG :: Scanner reponsed: $b
+2021-09-27 17:33:07,378 :: DEBUG :: Scanner reponsed: $i010001A2A20340
+2021-09-27 17:33:07,378 :: INFO :: Verify image type: PASSED, expected: JPEG, actual: JPEG
+2021-09-27 17:33:17,391 :: INFO :: Verify image: PASSED, expected: 107170, actual: 107170
+2021-09-27 17:33:22,399 :: INFO :: END SCENARIO: PASSED HOST_CMD_CAPTURE_ON_DECODE_NO_HANDSHAKE Image type: JPEG
+2021-09-27 17:33:22,399 :: DEBUG :: ********************************************************************************
+2021-09-27 17:33:22,399 :: INFO :: START SCENARIO: HOST_CMD_CAPTURE_ON_DECODE_NO_HANDSHAKE, Image type: BMP
+2021-09-27 17:33:22,399 :: DEBUG :: Write command: b'$S,CIPFI02,Ar\r'
+2021-09-27 17:33:32,416 :: INFO :: Setting on scanner successfully and scanner reset
+2021-09-27 17:33:32,416 :: DEBUG :: Write command: b'x028000000000\r'
+2021-09-27 17:33:32,416 :: DEBUG :: Write command: b'x04012A2A0000\r'
+2021-09-27 17:33:35,427 :: INFO :: Verify abort capture: PASSED
+2021-09-27 17:33:36,430 :: DEBUG :: Write command: b'x028000000000\r'
+2021-09-27 17:33:37,866 :: DEBUG :: Write command: b'X\r'
+2021-09-27 17:33:43,033 :: DEBUG :: Scanner reponsed: $b
+2021-09-27 17:33:53,045 :: DEBUG :: Scanner reponsed: 
+2021-09-27 17:33:53,045 :: INFO :: Verify image type: FAILED, expected: BMP, actual: 
+2021-09-27 17:33:53,045 :: INFO :: Verify image: PASSED, expected: 0, actual: 0
+2021-09-27 17:33:58,050 :: INFO :: END SCENARIO: FAILED HOST_CMD_CAPTURE_ON_DECODE_NO_HANDSHAKE Image type: BMP
+2021-09-27 17:33:58,050 :: DEBUG :: ********************************************************************************

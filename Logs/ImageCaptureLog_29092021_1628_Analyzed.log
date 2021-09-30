@@ -1,0 +1,33 @@
+TESTCASE NAME 	IMAGE TYPE 	RESULT
+Single Capture on Decode	JPEG	PASSED
+Single Capture on Decode	JPEG	PASSED
+Single Capture on Decode	TIFF	PASSED
+Single Capture on Decode	TIFF	PASSED
+Single Capture on Decode	BMP	PASSED
+Single Capture on Decode	BMP	PASSED
+Single Capture on Decode	JPEG2000	FAILED
+Single Capture on Decode	JPEG2000	FAILED
+Single Capture on Decode without HandShake	JPEG	PASSED
+Single Capture on Decode without HandShake	JPEG	PASSED
+Single Capture on Decode without HandShake	TIFF	PASSED
+Single Capture on Decode without HandShake	TIFF	FAILED
+Single Capture on Decode without HandShake	BMP	PASSED
+Single Capture on Decode without HandShake	BMP	FAILED
+Single Capture on Decode without HandShake	JPEG2000	FAILED
+Single Capture on Decode without HandShake	JPEG2000	FAILED
+Multiple Capture on Decode	JPEG	PASSED
+Multiple Capture on Decode	JPEG	PASSED
+Multiple Capture on Decode	TIFF	PASSED
+Multiple Capture on Decode	TIFF	PASSED
+Multiple Capture on Decode	BMP	PASSED
+Multiple Capture on Decode	BMP	PASSED
+Multiple Capture on Decode	JPEG2000	FAILED
+Multiple Capture on Decode	JPEG2000	FAILED
+Multiple Capture on Decode without HandShake	JPEG	FAILED
+Multiple Capture on Decode without HandShake	JPEG	PASSED
+Multiple Capture on Decode without HandShake	TIFF	PASSED
+Multiple Capture on Decode without HandShake	TIFF	PASSED
+Multiple Capture on Decode without HandShake	BMP	PASSED
+Multiple Capture on Decode without HandShake	BMP	FAILED
+Multiple Capture on Decode without HandShake	JPEG2000	FAILED
+Multiple Capture on Decode without HandShake	JPEG2000	FAILED

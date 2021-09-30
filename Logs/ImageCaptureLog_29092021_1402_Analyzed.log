@@ -1,0 +1,9 @@
+TESTCASE NAME 	IMAGE TYPE 	TIME(s) 	RESULT
+Image Capture Auto	JPEG	21.91	PASSED
+Image Capture Auto	JPEG	21.88	PASSED
+Image Capture Auto	TIFF	70.14	PASSED
+Image Capture Auto	TIFF	70.16	PASSED
+Image Capture Auto	BMP	60.12	PASSED
+Image Capture Auto	BMP	60.15	PASSED
+Image Capture Auto	JPEG2000	21.89	FAILED
+Image Capture Auto	JPEG2000	21.90	FAILED

@@ -1,0 +1,7 @@
+2021-09-15 14:48:02,135 :: INFO :: START SCENARIO: HOST_CMD_CAPTURE_ON_DECODE, Image type: JPEG
+2021-09-15 14:48:03,037 :: DEBUG :: Write command: b'$S,CIPFI00,Ar\r'
+2021-09-15 14:48:13,051 :: INFO :: Setting on scanner successfully and scanner reset
+2021-09-15 14:48:14,551 :: DEBUG :: Write command: b'x02012A2A0000\r'
+2021-09-15 14:48:15,918 :: DEBUG :: Write command: b'x04012A2A0000\r'
+2021-09-15 14:48:22,084 :: INFO :: Verify abort capture: PASSED
+2021-09-15 14:48:28,896 :: DEBUG :: Write command: b'x02012A2A0000\r'

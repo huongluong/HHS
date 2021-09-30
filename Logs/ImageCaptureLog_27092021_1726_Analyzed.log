@@ -1,0 +1,5 @@
+TESTCASE NAME 	IMAGE TYPE 	RESULT
+Single Capture on Decode without HandShake	JPEG	PASSED
+Single Capture on Decode without HandShake	BMP	PASSED
+Multiple Capture on Decode without HandShake	JPEG	PASSED
+Multiple Capture on Decode without HandShake	BMP	PASSED

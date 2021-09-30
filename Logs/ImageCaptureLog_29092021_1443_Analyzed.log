@@ -1,0 +1,17 @@
+TESTCASE NAME 	IMAGE TYPE 	RESULT
+Single Capture on Trigger	JPEG	PASSED
+Single Capture on Trigger	JPEG	PASSED
+Single Capture on Trigger	TIFF	PASSED
+Single Capture on Trigger	TIFF	PASSED
+Single Capture on Trigger	BMP	PASSED
+Single Capture on Trigger	BMP	PASSED
+Single Capture on Trigger	JPEG2000	FAILED
+Single Capture on Trigger	JPEG2000	FAILED
+Single Capture on Trigger without HandShake	JPEG	PASSED
+Single Capture on Trigger without HandShake	JPEG	PASSED
+Single Capture on Trigger without HandShake	TIFF	PASSED
+Single Capture on Trigger without HandShake	TIFF	PASSED
+Single Capture on Trigger without HandShake	BMP	PASSED
+Single Capture on Trigger without HandShake	BMP	PASSED
+Single Capture on Trigger without HandShake	JPEG2000	FAILED
+Single Capture on Trigger without HandShake	JPEG2000	FAILED

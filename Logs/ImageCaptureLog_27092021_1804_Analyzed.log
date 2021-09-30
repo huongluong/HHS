@@ -1,0 +1,3 @@
+TESTCASE NAME 	IMAGE TYPE 	RESULT
+Single Capture on Trigger	JPEG	PASSED
+Single Capture on Trigger	BMP	PASSED

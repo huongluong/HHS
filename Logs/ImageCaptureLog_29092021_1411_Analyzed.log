@@ -1,0 +1,9 @@
+TESTCASE NAME 	IMAGE TYPE 	TIME(s) 	RESULT
+Image Capture Auto without HandShake	JPEG	23.52	PASSED
+Image Capture Auto without HandShake	JPEG	24.06	PASSED
+Image Capture Auto without HandShake	TIFF	70.34	PASSED
+Image Capture Auto without HandShake	TIFF	60.35	PASSED
+Image Capture Auto without HandShake	BMP	60.35	PASSED
+Image Capture Auto without HandShake	BMP	60.37	PASSED
+Image Capture Auto without HandShake	JPEG2000	23.85	FAILED
+Image Capture Auto without HandShake	JPEG2000	23.85	FAILED

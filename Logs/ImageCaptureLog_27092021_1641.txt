@@ -1,0 +1,9 @@
+2021-09-27 16:41:10,366 :: INFO :: START SCENARIO: HOST_CMD_CAPTURE_NO_HANDSHAKE, Image type: JPEG
+2021-09-27 16:41:10,366 :: DEBUG :: Write command: b'$S,CIPFI00,Ar\r'
+2021-09-27 16:41:20,383 :: INFO :: Setting on scanner successfully and scanner reset
+2021-09-27 16:41:20,383 :: DEBUG :: Write command: b'x008110100000\r'
+2021-09-27 16:41:20,782 :: DEBUG :: Scanner reponsed: $i0100013E65033D
+2021-09-27 16:41:20,782 :: INFO :: Verify image type: PASSED, expected: JPEG, actual: JPEG
+2021-09-27 16:42:33,933 :: INFO :: Verify image: PASSED, expected: 81509, actual: 81509
+2021-09-27 16:42:38,983 :: INFO :: END SCENARIO: PASSED HOST_CMD_CAPTURE_NO_HANDSHAKE Image type: JPEG
+2021-09-27 16:42:38,983 :: DEBUG :: ********************************************************************************

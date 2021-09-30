@@ -1,0 +1,29 @@
+2021-09-29 10:19:43,547 :: INFO :: START SCENARIO: HOST_CMD_CAPTURE_ON_DECODE, Image type: BMP
+2021-09-29 10:19:43,547 :: DEBUG :: Write command: b'$S,CIPFI02,Ar\r'
+2021-09-29 10:19:53,563 :: INFO :: Setting on scanner successfully and scanner reset
+2021-09-29 10:19:53,563 :: DEBUG :: Write command: b'x02012A2A0000\r'
+2021-09-29 10:19:53,564 :: DEBUG :: Write command: b'x04012A2A0000\r'
+2021-09-29 10:19:56,570 :: INFO :: Verify abort capture: PASSED
+2021-09-29 10:19:57,573 :: DEBUG :: Write command: b'x02012A2A0000\r'
+2021-09-29 10:19:59,097 :: DEBUG :: Write command: b'X\r'
+2021-09-29 10:20:00,264 :: DEBUG :: Scanner reponsed: A123456789012
+2021-09-29 10:20:00,264 :: DEBUG :: Scanner reponsed: $i00000FA436034C
+2021-09-29 10:20:00,264 :: DEBUG :: Write command: b'x03012A2A0000\r'
+2021-09-29 10:21:00,308 :: INFO :: Verify image: PASSED, expected: 1025078, actual: 1025078
+2021-09-29 10:21:00,308 :: INFO :: Verify image type: PASSED, expected: BMP, actual: BMP
+2021-09-29 10:21:05,322 :: INFO :: END SCENARIO: PASSED HOST_CMD_CAPTURE_ON_DECODE Image type: BMP
+2021-09-29 10:21:05,322 :: DEBUG :: ********************************************************************************
+2021-09-29 10:21:05,322 :: INFO :: START SCENARIO: HOST_CMD_CAPTURE_ON_DECODE_NO_HANDSHAKE, Image type: BMP
+2021-09-29 10:21:05,322 :: DEBUG :: Write command: b'$S,CIPFI02,Ar\r'
+2021-09-29 10:21:15,323 :: INFO :: Setting on scanner successfully and scanner reset
+2021-09-29 10:21:15,323 :: DEBUG :: Write command: b'x028000000000\r'
+2021-09-29 10:21:15,323 :: DEBUG :: Write command: b'x04012A2A0000\r'
+2021-09-29 10:21:18,328 :: INFO :: Verify abort capture: PASSED
+2021-09-29 10:21:19,332 :: DEBUG :: Write command: b'x028000000000\r'
+2021-09-29 10:21:20,797 :: DEBUG :: Write command: b'X\r'
+2021-09-29 10:21:21,947 :: DEBUG :: Scanner reponsed: A123456789012
+2021-09-29 10:21:21,947 :: DEBUG :: Scanner reponsed: $i00000FA436034C
+2021-09-29 10:22:21,997 :: INFO :: Verify image: PASSED, expected: 1025078, actual: 1025078
+2021-09-29 10:22:21,997 :: INFO :: Verify image type: PASSED, expected: BMP, actual: BMP
+2021-09-29 10:22:27,010 :: INFO :: END SCENARIO: PASSED HOST_CMD_CAPTURE_ON_DECODE_NO_HANDSHAKE Image type: BMP
+2021-09-29 10:22:27,010 :: DEBUG :: ********************************************************************************

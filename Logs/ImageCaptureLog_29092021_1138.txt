@@ -1,0 +1,65 @@
+2021-09-29 11:38:08,347 :: INFO :: START SCENARIO: HOST_CMD_CAPTURE, Image type: JPEG
+2021-09-29 11:38:08,347 :: DEBUG :: Write command: b'$S,CIPFI00,Ar\r'
+2021-09-29 11:38:18,359 :: INFO :: Setting on scanner successfully and scanner reset
+2021-09-29 11:38:18,359 :: DEBUG :: Write command: b'x00012A2A0000\r'
+2021-09-29 11:38:18,580 :: DEBUG :: Scanner reponsed: $i010000CB720347
+2021-09-29 11:38:18,580 :: DEBUG :: Write command: b'x03012A2A0000\r'
+2021-09-29 11:38:30,636 :: INFO :: Verify image type: PASSED, expected: JPEG, actual: JPEG
+2021-09-29 11:38:30,636 :: INFO :: Verify image: PASSED, expected: 52082, actual: 52082
+2021-09-29 11:38:30,636 :: INFO :: Time consume : 22.29
+2021-09-29 11:38:30,636 :: INFO :: END SCENARIO: PASSED HOST_CMD_CAPTURE Image type: JPEG, duration time: 22.29
+2021-09-29 11:38:30,636 :: DEBUG :: ********************************************************************************
+2021-09-29 11:38:30,636 :: INFO :: START SCENARIO: HOST_CMD_CAPTURE, Image type: TIFF
+2021-09-29 11:38:30,636 :: DEBUG :: Write command: b'$S,CIPFI01,Ar\r'
+2021-09-29 11:38:40,637 :: INFO :: Setting on scanner successfully and scanner reset
+2021-09-29 11:38:40,637 :: DEBUG :: Write command: b'x00012A2A0000\r'
+2021-09-29 11:38:40,706 :: DEBUG :: Scanner reponsed: $i03000FB8F60367
+2021-09-29 11:38:40,706 :: DEBUG :: Write command: b'x03012A2A0000\r'
+2021-09-29 11:39:00,714 :: INFO :: Verify image type: PASSED, expected: TIFF, actual: TIFF
+2021-09-29 11:39:00,714 :: INFO :: Verify image: PASSED, expected: 1030390, actual: 1030390
+2021-09-29 11:39:00,714 :: INFO :: Time consume : 30.08
+2021-09-29 11:39:00,714 :: INFO :: END SCENARIO: PASSED HOST_CMD_CAPTURE Image type: TIFF, duration time: 30.08
+2021-09-29 11:39:00,714 :: DEBUG :: ********************************************************************************
+2021-09-29 11:39:00,714 :: INFO :: START SCENARIO: HOST_CMD_CAPTURE, Image type: TIFF
+2021-09-29 11:39:00,714 :: DEBUG :: Write command: b'$S,CIPFI01,Ar\r'
+2021-09-29 11:39:10,767 :: DEBUG :: Write command: b'x00012A2A0000\r'
+2021-09-29 11:39:20,770 :: DEBUG :: Scanner reponsed: 
+2021-09-29 11:39:20,770 :: DEBUG :: Write command: b'x03012A2A0000\r'
+2021-09-29 11:39:20,770 :: INFO :: Verify image type: FAILED, expected: TIFF, actual: 
+2021-09-29 11:39:20,770 :: INFO :: Verify image: PASSED, expected: 0, actual: 0
+2021-09-29 11:39:20,770 :: INFO :: Time consume : 20.06
+2021-09-29 11:39:20,770 :: INFO :: END SCENARIO: FAILED HOST_CMD_CAPTURE Image type: TIFF, duration time: 20.06
+2021-09-29 11:39:20,770 :: DEBUG :: ********************************************************************************
+2021-09-29 11:39:20,770 :: INFO :: START SCENARIO: HOST_CMD_CAPTURE, Image type: BMP
+2021-09-29 11:39:20,770 :: DEBUG :: Write command: b'$S,CIPFI02,Ar\r'
+2021-09-29 11:39:30,781 :: INFO :: Setting on scanner successfully and scanner reset
+2021-09-29 11:39:30,781 :: DEBUG :: Write command: b'x00012A2A0000\r'
+2021-09-29 11:39:40,790 :: DEBUG :: Scanner reponsed: 
+2021-09-29 11:39:40,790 :: DEBUG :: Write command: b'x03012A2A0000\r'
+2021-09-29 11:39:40,790 :: INFO :: Verify image type: FAILED, expected: BMP, actual: 
+2021-09-29 11:39:40,790 :: INFO :: Verify image: PASSED, expected: 0, actual: 0
+2021-09-29 11:39:40,790 :: INFO :: Time consume : 20.02
+2021-09-29 11:39:40,790 :: INFO :: END SCENARIO: FAILED HOST_CMD_CAPTURE Image type: BMP, duration time: 20.02
+2021-09-29 11:39:40,790 :: DEBUG :: ********************************************************************************
+2021-09-29 11:39:40,790 :: INFO :: START SCENARIO: HOST_CMD_CAPTURE, Image type: JPEG2000
+2021-09-29 11:39:40,790 :: DEBUG :: Write command: b'$S,CIPFI00,Ar\r'
+2021-09-29 11:39:50,790 :: INFO :: Setting on scanner successfully and scanner reset
+2021-09-29 11:39:50,790 :: DEBUG :: Write command: b'x00012A2A0000\r'
+2021-09-29 11:40:00,797 :: DEBUG :: Scanner reponsed: 
+2021-09-29 11:40:00,797 :: DEBUG :: Write command: b'x03012A2A0000\r'
+2021-09-29 11:40:00,797 :: INFO :: Verify image type: FAILED, expected: JPEG2000, actual: 
+2021-09-29 11:40:00,797 :: INFO :: Verify image: PASSED, expected: 0, actual: 0
+2021-09-29 11:40:00,797 :: INFO :: Time consume : 20.01
+2021-09-29 11:40:00,797 :: INFO :: END SCENARIO: FAILED HOST_CMD_CAPTURE Image type: JPEG2000, duration time: 20.01
+2021-09-29 11:40:00,797 :: DEBUG :: ********************************************************************************
+2021-09-29 11:40:00,797 :: INFO :: START SCENARIO: HOST_CMD_CAPTURE, Image type: JPEG2000
+2021-09-29 11:40:00,797 :: DEBUG :: Write command: b'$S,CIPFI00,Ar\r'
+2021-09-29 11:40:10,811 :: INFO :: Setting on scanner successfully and scanner reset
+2021-09-29 11:40:10,811 :: DEBUG :: Write command: b'x00012A2A0000\r'
+2021-09-29 11:40:20,813 :: DEBUG :: Scanner reponsed: 
+2021-09-29 11:40:20,813 :: DEBUG :: Write command: b'x03012A2A0000\r'
+2021-09-29 11:40:20,813 :: INFO :: Verify image type: FAILED, expected: JPEG2000, actual: 
+2021-09-29 11:40:20,813 :: INFO :: Verify image: PASSED, expected: 0, actual: 0
+2021-09-29 11:40:20,813 :: INFO :: Time consume : 20.02
+2021-09-29 11:40:20,814 :: INFO :: END SCENARIO: FAILED HOST_CMD_CAPTURE Image type: JPEG2000, duration time: 20.02
+2021-09-29 11:40:20,814 :: DEBUG :: ********************************************************************************

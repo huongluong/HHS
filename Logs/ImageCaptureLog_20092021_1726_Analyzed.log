@@ -1,0 +1,21 @@
+TESTCASE NAME 	IMAGE TYPE 	RESULT
+Image Capture Auto	JPEG	PASSED
+Image Capture Auto	BMP	PASSED
+Image Capture Auto without HandShake	JPEG	PASSED
+Image Capture Auto without HandShake	BMP	PASSED
+Single Capture on Trigger	JPEG	PASSED
+Single Capture on Trigger	BMP	PASSED
+Single Capture on Trigger without HandShake	JPEG	PASSED
+Single Capture on Trigger without HandShake	BMP	PASSED
+Multiple Capture on Trigger	JPEG	PASSED
+Multiple Capture on Trigger	BMP	PASSED
+Multiple Capture on Trigger without HandShake	JPEG	PASSED
+Multiple Capture on Trigger without HandShake	BMP	PASSED
+Single Capture on Decode	JPEG	PASSED
+Single Capture on Decode	BMP	PASSED
+Single Capture on Decode without HandShake	JPEG	PASSED
+Single Capture on Decode without HandShake	BMP	PASSED
+Multiple Capture on Decode	JPEG	PASSED
+Multiple Capture on Decode	BMP	PASSED
+Multiple Capture on Decode without HandShake	JPEG	PASSED
+Multiple Capture on Decode without HandShake	BMP	PASSED

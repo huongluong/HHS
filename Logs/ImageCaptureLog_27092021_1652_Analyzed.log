@@ -1,0 +1,13 @@
+TESTCASE NAME 	IMAGE TYPE 	RESULT
+Multiple Capture on Trigger	JPEG	PASSED
+Multiple Capture on Trigger	BMP	PASSED
+Multiple Capture on Trigger without HandShake	JPEG	PASSED
+Multiple Capture on Trigger without HandShake	BMP	PASSED
+Single Capture on Decode	JPEG	PASSED
+Single Capture on Decode	BMP	PASSED
+Single Capture on Decode without HandShake	JPEG	PASSED
+Single Capture on Decode without HandShake	BMP	FAILED
+Multiple Capture on Decode	JPEG	PASSED
+Multiple Capture on Decode	BMP	PASSED
+Multiple Capture on Decode without HandShake	JPEG	FAILED
+Multiple Capture on Decode without HandShake	BMP	FAILED

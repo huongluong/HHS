@@ -1,0 +1,54 @@
+2021-09-29 15:57:27,481 :: INFO :: START SCENARIO: HOST_CMD_MULTIPLE_CAPTURE_ON_TRIGGER, Image type: JPEG
+2021-09-29 15:57:27,481 :: DEBUG :: Write command: b'$S,CIPFI00,Ar\r'
+2021-09-29 15:57:37,497 :: INFO :: Setting on scanner successfully and scanner reset
+2021-09-29 15:57:37,497 :: DEBUG :: Write command: b'x011140400001\r'
+2021-09-29 15:57:37,497 :: DEBUG :: Write command: b'x04012A2A0000\r'
+2021-09-29 15:57:38,513 :: INFO :: Verify abort capture: PASSED
+2021-09-29 15:57:58,163 :: INFO :: START SCENARIO: HOST_CMD_MULTIPLE_CAPTURE_ON_TRIGGER, Image type: JPEG
+2021-09-29 15:57:58,164 :: DEBUG :: Write command: b'$S,CIPFI00,Ar\r'
+2021-09-29 15:58:08,180 :: INFO :: Setting on scanner successfully and scanner reset
+2021-09-29 15:58:08,180 :: DEBUG :: Write command: b'x011140400001\r'
+2021-09-29 15:58:08,180 :: DEBUG :: Write command: b'x04012A2A0000\r'
+2021-09-29 15:58:09,197 :: INFO :: Verify abort capture: PASSED
+2021-09-29 15:58:10,214 :: DEBUG :: Write command: b'x011140400001\r'
+2021-09-29 15:58:11,214 :: INFO :: Times :1
+2021-09-29 15:58:11,214 :: DEBUG :: Write command: b'X\r'
+2021-09-29 15:58:11,420 :: DEBUG :: Scanner reponsed: $i010000302C0331
+2021-09-29 15:58:11,420 :: DEBUG :: Write command: b'x03012A2A0000\r'
+2021-09-29 15:58:21,426 :: INFO :: Verify image: FAILED, expected: 12332, actual: empty
+2021-09-29 15:58:21,426 :: INFO :: Verify image type: PASSED, expected: JPEG, actual: JPEG
+2021-09-29 15:58:21,426 :: INFO :: Times :2
+2021-09-29 15:58:21,426 :: DEBUG :: Write command: b'X\r'
+2021-09-29 15:58:31,430 :: DEBUG :: Scanner reponsed: 
+2021-09-29 15:58:31,430 :: DEBUG :: Write command: b'x03012A2A0000\r'
+2021-09-29 15:58:31,430 :: INFO :: Verify image: FAILED, expected: 0, actual: empty
+2021-09-29 15:58:31,430 :: INFO :: Verify image type: FAILED, expected: JPEG, actual: 
+2021-09-29 15:58:31,430 :: DEBUG :: Write command: b'x04012A2A0000\r'
+2021-09-29 15:58:42,464 :: INFO :: Verify abort capture: FAILED
+2021-09-29 15:58:43,479 :: INFO :: Time consume : 45.32
+2021-09-29 15:58:43,479 :: INFO :: END SCENARIO: FAILED HOST_CMD_MULTIPLE_CAPTURE_ON_TRIGGER Image type: JPEG, duration time: 45.32
+2021-09-29 15:58:43,479 :: DEBUG :: ********************************************************************************
+2021-09-29 15:58:43,480 :: INFO :: START SCENARIO: HOST_CMD_MULTIPLE_CAPTURE_ON_TRIGGER, Image type: JPEG
+2021-09-29 15:58:43,480 :: DEBUG :: Write command: b'$S,CIPFI00,Ar\r'
+2021-09-29 15:58:53,497 :: INFO :: Setting on scanner successfully and scanner reset
+2021-09-29 15:58:53,497 :: DEBUG :: Write command: b'x011140400001\r'
+2021-09-29 15:58:53,497 :: DEBUG :: Write command: b'x04012A2A0000\r'
+2021-09-29 15:58:54,514 :: INFO :: Verify abort capture: PASSED
+2021-09-29 15:58:55,530 :: DEBUG :: Write command: b'x011140400001\r'
+2021-09-29 15:58:56,531 :: INFO :: Times :1
+2021-09-29 15:58:56,531 :: DEBUG :: Write command: b'X\r'
+2021-09-29 15:58:56,764 :: DEBUG :: Scanner reponsed: $i010000302C0331
+2021-09-29 15:58:56,764 :: DEBUG :: Write command: b'x03012A2A0000\r'
+2021-09-29 15:59:07,266 :: INFO :: Verify image: PASSED, expected: 12332, actual: 12332
+2021-09-29 15:59:07,266 :: INFO :: Verify image type: PASSED, expected: JPEG, actual: JPEG
+2021-09-29 15:59:07,266 :: INFO :: Times :2
+2021-09-29 15:59:07,266 :: DEBUG :: Write command: b'X\r'
+2021-09-29 15:59:07,474 :: DEBUG :: Scanner reponsed: $i010000302C0331
+2021-09-29 15:59:07,474 :: DEBUG :: Write command: b'x03012A2A0000\r'
+2021-09-29 15:59:17,978 :: INFO :: Verify image: PASSED, expected: 12332, actual: 12332
+2021-09-29 15:59:17,978 :: INFO :: Verify image type: PASSED, expected: JPEG, actual: JPEG
+2021-09-29 15:59:17,979 :: DEBUG :: Write command: b'x04012A2A0000\r'
+2021-09-29 15:59:18,994 :: INFO :: Verify abort capture: PASSED
+2021-09-29 15:59:20,008 :: INFO :: Time consume : 36.53
+2021-09-29 15:59:20,008 :: INFO :: END SCENARIO: PASSED HOST_CMD_MULTIPLE_CAPTURE_ON_TRIGGER Image type: JPEG, duration time: 36.53
+2021-09-29 15:59:20,008 :: DEBUG :: ********************************************************************************

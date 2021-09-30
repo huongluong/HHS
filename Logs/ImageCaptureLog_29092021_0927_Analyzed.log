@@ -1,0 +1,5 @@
+TESTCASE NAME 	IMAGE TYPE 	RESULT
+Image Capture Auto	BMP	PASSED
+Image Capture Auto without HandShake	BMP	PASSED
+Single Capture on Trigger	BMP	PASSED
+Single Capture on Trigger without HandShake	BMP	PASSED

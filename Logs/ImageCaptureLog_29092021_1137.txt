@@ -1,0 +1,11 @@
+2021-09-29 11:37:05,864 :: INFO :: START SCENARIO: HOST_CMD_CAPTURE, Image type: JPEG
+2021-09-29 11:37:05,864 :: DEBUG :: Write command: b'$S,CIPFI00,Ar\r'
+2021-09-29 11:37:15,880 :: INFO :: Setting on scanner successfully and scanner reset
+2021-09-29 11:37:15,880 :: DEBUG :: Write command: b'x00012A2A0000\r'
+2021-09-29 11:37:16,105 :: DEBUG :: Scanner reponsed: $i010000CAF20355
+2021-09-29 11:37:16,105 :: DEBUG :: Write command: b'x03012A2A0000\r'
+2021-09-29 11:37:28,150 :: INFO :: Verify image type: PASSED, expected: JPEG, actual: JPEG
+2021-09-29 11:37:28,150 :: INFO :: Verify image: PASSED, expected: 51954, actual: 51954
+2021-09-29 11:37:28,150 :: INFO :: Time consume : 22.29
+2021-09-29 11:37:28,150 :: INFO :: END SCENARIO: PASSED HOST_CMD_CAPTURE Image type: JPEG, duration time: 22.29
+2021-09-29 11:37:28,150 :: DEBUG :: ********************************************************************************

@@ -1,0 +1,42 @@
+2021-09-28 17:43:51,907 :: INFO :: START SCENARIO: HOST_CMD_MULTIPLE_CAPTURE_ON_TRIGGER, Image type: BMP
+2021-09-28 17:43:51,908 :: DEBUG :: Write command: b'$S,CIPFI02,Ar\r'
+2021-09-28 17:44:01,912 :: INFO :: Setting on scanner successfully and scanner reset
+2021-09-28 17:44:01,912 :: DEBUG :: Write command: b'x011120400100\r'
+2021-09-28 17:44:01,913 :: DEBUG :: Write command: b'x04012A2A0000\r'
+2021-09-28 17:44:04,920 :: INFO :: Verify abort capture: PASSED
+2021-09-28 17:44:05,932 :: DEBUG :: Write command: b'x011120400100\r'
+2021-09-28 17:44:06,934 :: INFO :: Times :1
+2021-09-28 17:44:06,936 :: DEBUG :: Write command: b'X\r'
+2021-09-28 17:44:07,034 :: DEBUG :: Scanner reponsed: $i00000FA436034C
+2021-09-28 17:44:07,034 :: INFO :: Verify image type: PASSED, expected: BMP, actual: BMP
+2021-09-28 17:44:17,051 :: INFO :: Verify image: PASSED, expected: 1025078, actual: 1025078
+2021-09-28 17:44:17,051 :: INFO :: Times :2
+2021-09-28 17:44:17,051 :: DEBUG :: Write command: b'X\r'
+2021-09-28 17:44:17,150 :: DEBUG :: Scanner reponsed: $i00000FA436034C
+2021-09-28 17:44:17,151 :: INFO :: Verify image type: PASSED, expected: BMP, actual: BMP
+2021-09-28 17:44:27,161 :: INFO :: Verify image: PASSED, expected: 1025078, actual: 1025078
+2021-09-28 17:44:27,161 :: DEBUG :: Write command: b'x04012A2A0000\r'
+2021-09-28 17:44:30,169 :: INFO :: Verify abort capture: PASSED
+2021-09-28 17:44:31,179 :: INFO :: END SCENARIO: PASSED HOST_CMD_MULTIPLE_CAPTURE_ON_TRIGGER Image type: BMP
+2021-09-28 17:44:31,179 :: DEBUG :: ********************************************************************************
+2021-09-28 17:44:31,179 :: INFO :: START SCENARIO: HOST_CMD_MULTIPLE_CAPTURE_ON_TRIGGER_NO_HANDSHAKE, Image type: BMP
+2021-09-28 17:44:31,179 :: DEBUG :: Write command: b'$S,CIPFI02,Ar\r'
+2021-09-28 17:44:41,190 :: INFO :: Setting on scanner successfully and scanner reset
+2021-09-28 17:44:41,190 :: DEBUG :: Write command: b'x019030300101\r'
+2021-09-28 17:44:41,191 :: DEBUG :: Write command: b'x04012A2A0000\r'
+2021-09-28 17:44:44,195 :: INFO :: Verify abort capture: PASSED
+2021-09-28 17:44:45,207 :: DEBUG :: Write command: b'x019030300101\r'
+2021-09-28 17:44:46,221 :: INFO :: Times :1
+2021-09-28 17:44:46,221 :: DEBUG :: Write command: b'X\r'
+2021-09-28 17:44:46,520 :: DEBUG :: Scanner reponsed: $i00000FA436034C
+2021-09-28 17:44:46,520 :: INFO :: Verify image type: PASSED, expected: BMP, actual: BMP
+2021-09-28 17:45:36,585 :: INFO :: Verify image: PASSED, expected: 1025078, actual: 1025078
+2021-09-28 17:45:36,585 :: INFO :: Times :2
+2021-09-28 17:45:36,585 :: DEBUG :: Write command: b'X\r'
+2021-09-28 17:45:36,883 :: DEBUG :: Scanner reponsed: $i00000FA436034C
+2021-09-28 17:45:36,884 :: INFO :: Verify image type: PASSED, expected: BMP, actual: BMP
+2021-09-28 17:46:36,934 :: INFO :: Verify image: PASSED, expected: 1025078, actual: 1025078
+2021-09-28 17:46:36,934 :: DEBUG :: Write command: b'x04012A2A0000\r'
+2021-09-28 17:46:39,940 :: INFO :: Verify abort capture: PASSED
+2021-09-28 17:46:40,949 :: INFO :: END SCENARIO: PASSED HOST_CMD_MULTIPLE_CAPTURE_ON_TRIGGER_NO_HANDSHAKE Image type: BMP
+2021-09-28 17:46:40,949 :: DEBUG :: ********************************************************************************

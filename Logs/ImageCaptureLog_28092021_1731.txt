@@ -1,0 +1,11 @@
+2021-09-28 17:31:24,292 :: INFO :: START SCENARIO: HOST_CMD_CAPTURE_ON_TRIGGER Image type: BMP
+2021-09-28 17:31:24,292 :: DEBUG :: Write command: b'$S,CIPFI02,Ar\r'
+2021-09-28 17:31:34,300 :: INFO :: Setting on scanner successfully and scanner reset
+2021-09-28 17:31:34,300 :: DEBUG :: Write command: b'x010140400001\r'
+2021-09-28 17:31:34,300 :: DEBUG :: Write command: b'x04012A2A0000\r'
+2021-09-28 17:31:37,308 :: INFO :: Verify abort capture: PASSED
+2021-09-28 17:31:38,321 :: DEBUG :: Write command: b'x010140400001\r'
+2021-09-28 17:31:39,323 :: DEBUG :: Write command: b'X\r'
+2021-09-28 17:31:39,414 :: DEBUG :: Scanner reponsed: $i00000FA436034C
+2021-09-28 17:31:39,414 :: INFO :: Verify image type: PASSED, expected: BMP, actual: BMP
+2021-09-28 17:32:40,125 :: INFO :: Verify image: PASSED, expected: 1025078, actual: 1025078

@@ -1,0 +1,10 @@
+2021-09-27 16:39:21,000 :: INFO :: START SCENARIO: HOST_CMD_CAPTURE, Image type: BMP
+2021-09-27 16:39:21,015 :: DEBUG :: Write command: b'$S,CIPFI02,Ar\r'
+2021-09-27 16:39:31,033 :: INFO :: Setting on scanner successfully and scanner reset
+2021-09-27 16:39:31,033 :: DEBUG :: Write command: b'x00012A2A0000\r'
+2021-09-27 16:39:31,033 :: DEBUG :: Write command: b'x03012A2A0000\r'
+2021-09-27 16:39:31,142 :: DEBUG :: Scanner reponsed: $i00000FA436034C
+2021-09-27 16:39:31,142 :: INFO :: Verify image type: PASSED, expected: BMP, actual: BMP
+2021-09-27 16:40:51,213 :: INFO :: Verify image: PASSED, expected: 1025078, actual: 1025078
+2021-09-27 16:40:56,232 :: INFO :: END SCENARIO: PASSED HOST_CMD_CAPTURE Image type: BMP
+2021-09-27 16:40:56,232 :: DEBUG :: ********************************************************************************

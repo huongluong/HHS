@@ -1,0 +1,26 @@
+2021-09-27 18:04:25,806 :: INFO :: START SCENARIO: HOST_CMD_CAPTURE_ON_TRIGGER Image type: JPEG
+2021-09-27 18:04:25,807 :: DEBUG :: Write command: b'$S,CIPFI00,Ar\r'
+2021-09-27 18:04:35,815 :: INFO :: Setting on scanner successfully and scanner reset
+2021-09-27 18:04:35,816 :: DEBUG :: Write command: b'x010140400001\r'
+2021-09-27 18:04:35,816 :: DEBUG :: Write command: b'x04012A2A0000\r'
+2021-09-27 18:04:38,823 :: INFO :: Verify abort capture: PASSED
+2021-09-27 18:04:39,835 :: DEBUG :: Write command: b'x010140400001\r'
+2021-09-27 18:04:40,842 :: DEBUG :: Write command: b'X\r'
+2021-09-27 18:04:41,091 :: DEBUG :: Scanner reponsed: $i010000302C0331
+2021-09-27 18:04:41,092 :: INFO :: Verify image type: PASSED, expected: JPEG, actual: JPEG
+2021-09-27 18:04:51,096 :: INFO :: Verify image: PASSED, expected: 12332, actual: 12332
+2021-09-27 18:04:56,098 :: INFO :: END SCENARIO: PASSED HOST_CMD_CAPTURE_ON_TRIGGER Image type: JPEG
+2021-09-27 18:04:56,099 :: DEBUG :: ********************************************************************************
+2021-09-27 18:04:56,099 :: INFO :: START SCENARIO: HOST_CMD_CAPTURE_ON_TRIGGER Image type: BMP
+2021-09-27 18:04:56,099 :: DEBUG :: Write command: b'$S,CIPFI02,Ar\r'
+2021-09-27 18:05:06,109 :: INFO :: Setting on scanner successfully and scanner reset
+2021-09-27 18:05:06,110 :: DEBUG :: Write command: b'x010140400001\r'
+2021-09-27 18:05:06,110 :: DEBUG :: Write command: b'x04012A2A0000\r'
+2021-09-27 18:05:09,112 :: INFO :: Verify abort capture: PASSED
+2021-09-27 18:05:10,124 :: DEBUG :: Write command: b'x010140400001\r'
+2021-09-27 18:05:11,134 :: DEBUG :: Write command: b'X\r'
+2021-09-27 18:05:11,225 :: DEBUG :: Scanner reponsed: $i00000FA436034C
+2021-09-27 18:05:11,225 :: INFO :: Verify image type: PASSED, expected: BMP, actual: BMP
+2021-09-27 18:05:21,232 :: INFO :: Verify image: PASSED, expected: 1025078, actual: 1025078
+2021-09-27 18:05:26,242 :: INFO :: END SCENARIO: PASSED HOST_CMD_CAPTURE_ON_TRIGGER Image type: BMP
+2021-09-27 18:05:26,242 :: DEBUG :: ********************************************************************************

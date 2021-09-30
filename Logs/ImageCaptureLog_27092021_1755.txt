@@ -1,0 +1,30 @@
+2021-09-27 17:55:05,588 :: INFO :: START SCENARIO: HOST_CMD_CAPTURE_ON_DECODE, Image type: JPEG
+2021-09-27 17:55:05,588 :: DEBUG :: Write command: b'$S,CIPFI00,Ar\r'
+2021-09-27 17:55:15,599 :: INFO :: Setting on scanner successfully and scanner reset
+2021-09-27 17:55:15,600 :: DEBUG :: Write command: b'x02012A2A0000\r'
+2021-09-27 17:55:15,600 :: DEBUG :: Write command: b'x04012A2A0000\r'
+2021-09-27 17:55:18,610 :: INFO :: Verify abort capture: PASSED
+2021-09-27 17:55:19,617 :: DEBUG :: Write command: b'x02012A2A0000\r'
+2021-09-27 17:55:21,113 :: DEBUG :: Write command: b'X\r'
+2021-09-27 17:55:26,271 :: DEBUG :: Write command: b'x03012A2A0000\r'
+2021-09-27 17:55:26,272 :: DEBUG :: Scanner reponsed: 123456789012
+2021-09-27 17:55:26,273 :: DEBUG :: Scanner reponsed: $i010000DEB10355
+2021-09-27 17:55:26,274 :: INFO :: Verify image type: PASSED, expected: JPEG, actual: JPEG
+2021-09-27 17:55:36,276 :: INFO :: Verify image: PASSED, expected: 57009, actual: 57009
+2021-09-27 17:55:41,279 :: INFO :: END SCENARIO: PASSED HOST_CMD_CAPTURE_ON_DECODE Image type: JPEG
+2021-09-27 17:55:41,279 :: DEBUG :: ********************************************************************************
+2021-09-27 17:55:41,280 :: INFO :: START SCENARIO: HOST_CMD_CAPTURE_ON_DECODE, Image type: BMP
+2021-09-27 17:55:41,280 :: DEBUG :: Write command: b'$S,CIPFI02,Ar\r'
+2021-09-27 17:55:51,295 :: INFO :: Setting on scanner successfully and scanner reset
+2021-09-27 17:55:51,296 :: DEBUG :: Write command: b'x02012A2A0000\r'
+2021-09-27 17:55:51,296 :: DEBUG :: Write command: b'x04012A2A0000\r'
+2021-09-27 17:55:54,297 :: INFO :: Verify abort capture: PASSED
+2021-09-27 17:55:55,306 :: DEBUG :: Write command: b'x02012A2A0000\r'
+2021-09-27 17:55:56,739 :: DEBUG :: Write command: b'X\r'
+2021-09-27 17:56:01,884 :: DEBUG :: Write command: b'x03012A2A0000\r'
+2021-09-27 17:56:01,885 :: DEBUG :: Scanner reponsed: 123456789012
+2021-09-27 17:56:01,886 :: DEBUG :: Scanner reponsed: $i00000FA436034C
+2021-09-27 17:56:01,886 :: INFO :: Verify image type: PASSED, expected: BMP, actual: BMP
+2021-09-27 17:56:11,889 :: INFO :: Verify image: PASSED, expected: 1025078, actual: 1025078
+2021-09-27 17:56:16,895 :: INFO :: END SCENARIO: PASSED HOST_CMD_CAPTURE_ON_DECODE Image type: BMP
+2021-09-27 17:56:16,896 :: DEBUG :: ********************************************************************************

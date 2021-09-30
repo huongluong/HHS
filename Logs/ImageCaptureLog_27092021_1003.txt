@@ -1,0 +1,9 @@
+2021-09-27 10:03:49,973 :: INFO :: START SCENARIO: HOST_CMD_CAPTURE_NO_HANDSHAKE, Image type: BMP
+2021-09-27 10:03:49,973 :: DEBUG :: Write command: b'$S,CIPFI02,Ar\r'
+2021-09-27 10:03:59,991 :: INFO :: Setting on scanner successfully and scanner reset
+2021-09-27 10:03:59,991 :: DEBUG :: Write command: b'x008110100000\r'
+2021-09-27 10:04:10,007 :: DEBUG :: Scanner reponsed: 
+2021-09-27 10:04:10,007 :: INFO :: Verify image type: FAILED, expected: BMP, actual: 
+2021-09-27 10:04:20,021 :: INFO :: Verify image: PASSED, expected: 0, actual: 0
+2021-09-27 10:04:25,023 :: INFO :: END SCENARIO: FAILED HOST_CMD_CAPTURE_NO_HANDSHAKE Image type: BMP
+2021-09-27 10:04:25,027 :: DEBUG :: ********************************************************************************

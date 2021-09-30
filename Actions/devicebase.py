@@ -12,7 +12,7 @@ class Device():
             globals().update({'__gDevHandle': __gDevHandle})
         except:
             err = str(sys.exc_info()[1]).replace("\n", "")
-            print "WARNING:::_init_::: ERROR::: " + str(err)
+            print("WARNING:::_init_::: ERROR::: " + str(err))
 
 class DeviceObject():
     def __init__(self, devobj=None):
@@ -32,7 +32,7 @@ class DeviceObject():
         try:
             isopen = self._devobj.isOpen()
         except:
-            print "WARNING:::isOpen::: CANNOT OPEN SERIAL PORT"
+            print("WARNING:::isOpen::: CANNOT OPEN SERIAL PORT")
         return isopen
     
     def open(self):

@@ -38,7 +38,7 @@ def CaptureScreen(screenshotpath="C:\\Temp.png", xsrc=0, ysrc=0, w=500, h=500):
     try:
         app = wx.App(False)
         s = wx.ScreenDC()
-        b = wx.EmptyBitmap(w, h)
+        b = wx.Bitmap(w, h)
         m = wx.MemoryDCFromDC(s)
         m.SelectObject(b)
         m.Blit(0, 0, w, h, s, xsrc, ysrc)
@@ -102,191 +102,6 @@ def CreateLanguageTXT(workingfolder="C:\\Keyboard\\CountryMode\\Data\\",strlangu
     # close file
     f.close()
 
-def DataCheck(data, rangedata):
-    datacheck = False
-    try:
-        # get correct range data
-        if len(rangedata) > 0:
-            if not (re.match("^[A-Z0-9]*$", rangedata) or re.match("^[A-Z0-9_-]*$", rangedata)):
-                rangedata = ""
-
-        # check if data is matched with range
-        if len(data) > 0 and len(rangedata) > 0:
-
-            # get first and last range if had
-            firstrange = ""
-            lastrange = ""
-            if rangedata.find('-') >= 0:
-                tmplstrange = rangedata.split('-')
-                firstrange = tmplstrange[0]
-                lastrange = tmplstrange[1]
-            else:
-                if rangedata.find('_') >= 0:
-                    tmplstrange = rangedata.split('_')
-                    firstrange = tmplstrange[0]
-                    lastrange = tmplstrange[1]
-                else:
-                    firstrange = rangedata
-
-            # check first range match
-            tmp_listdata = list(data)
-            bflagcheck1 = False
-            if len(firstrange) > 0:
-                # first character maybe a strange character
-                # so real first data is at the second char
-                #firstdata = data[:2]
-
-                firstdata = tmp_listdata[0]
-                print("First Data: " + firstdata)
-
-                # convert unc to unicode string
-                buffer0 = ""
-                unc = ""
-                buffer0tmplst = []
-                if len(firstrange) <= 4:
-                    buffer0tmplst = ['0' for x in xrange(4-len(firstrange))]
-                    buffer0 = ''.join(buffer0tmplst)
-                    unc = '\u' + buffer0 + firstrange
-                else:
-                    buffer0tmplst = ['0' for x in xrange(8-len(firstrange))]
-                    buffer0 = ''.join(buffer0tmplst)
-                    unc = '\U' + buffer0 + firstrange
-
-                firststringunicode = ""
-                if len(unc) > 0:
-                    firststringunicode = unc.decode('unicode_escape')
-                    firststringunicode = firststringunicode.encode('utf-8')
-
-                print("First Unicode Char: " + firststringunicode)
-
-                if firststringunicode == firstdata:
-                    bflagcheck1 = True
-
-            bflagcheck2 = False
-            # check first range match
-            if len(lastrange) > 0:
-                # last data maybe contain some strange char
-                # get the second of last data is a real last data
-                #lastdata = data[-2:]
-                lastdata = tmp_listdata[len(tmp_listdata) - 1]
-                print("Last Char: " + lastdata)
-
-                # convert unc to unicode string
-                buffer0 = ""
-                unc = ""
-                buffer0tmplst = []
-                if len(lastrange) <= 4:
-                    buffer0tmplst = ['0' for x in xrange(4-len(lastrange))]
-                    buffer0 = ''.join(buffer0tmplst)
-                    unc = '\u' + buffer0 + lastrange
-                else:
-                    buffer0tmplst = ['0' for x in xrange(8-len(lastrange))]
-                    buffer0 = ''.join(buffer0tmplst)
-                    unc = '\U' + buffer0 + lastrange
-
-                laststringunicode = ""
-                if len(unc) > 0:
-                    laststringunicode = unc.decode('unicode_escape')
-                    laststringunicode = laststringunicode.encode('utf-8')
-
-                if laststringunicode == lastdata:
-                    bflagcheck2 = True
-            else:
-                bflagcheck2 = True
-
-            datacheck = bflagcheck1 and bflagcheck2
-    except:
-        err = str(sys.exc_info()[1]).replace("\n", "")
-        logging.warning(err)
-    return datacheck
-
-def DataCheck2(data, rangedata):
-    datacheck = False
-    try:
-        # get correct range data
-        if len(rangedata) > 0:
-            if not (re.match("^[A-Z0-9]*$", rangedata) or re.match("^[A-Z0-9_-]*$", rangedata)):
-                rangedata = ""
-
-        # check if data is matched with range
-        if len(data) > 0 and len(rangedata) > 0:
-            # get first and last range if had
-            firstrange = ""
-            lastrange = ""
-            if rangedata.find('-') >= 0:
-                tmplstrange = rangedata.split('-')
-                firstrange = tmplstrange[0]
-                lastrange = tmplstrange[1]
-            else:
-                if rangedata.find('_') >= 0:
-                    tmplstrange = rangedata.split('_')
-                    firstrange = tmplstrange[0]
-                    lastrange = tmplstrange[1]
-                else:
-                    firstrange = rangedata
-
-            # check first range match
-            tmp_listdata = list(data)
-            bflagcheck1 = False
-            if len(firstrange) > 0:
-                # first character maybe a strange character
-                # so real first data is at the second char
-                firstdata = tmp_listdata[0]
-
-                # convert unc to unicode string
-                buffer0 = ""
-                unc = ""
-                buffer0tmplst = []
-                if len(firstrange) <= 4:
-                    buffer0tmplst = ['0' for x in xrange(4-len(firstrange))]
-                    buffer0 = ''.join(buffer0tmplst)
-                    unc = '\u' + buffer0 + firstrange
-                else:
-                    buffer0tmplst = ['0' for x in xrange(8-len(firstrange))]
-                    buffer0 = ''.join(buffer0tmplst)
-                    unc = '\U' + buffer0 + firstrange
-
-                firststringunicode = ""
-                if len(unc) > 0:
-                    firststringunicode = unc.decode('unicode_escape')
-
-                if firststringunicode == firstdata:
-                    bflagcheck1 = True
-
-            bflagcheck2 = False
-            # check first range match
-            if len(lastrange) > 0:
-                # last data maybe contain some strange char
-                # get the second of last data is a real last data
-                lastdata = tmp_listdata[len(tmp_listdata) - 1]
-
-                # convert unc to unicode string
-                buffer0 = ""
-                unc = ""
-                buffer0tmplst = []
-                if len(lastrange) <= 4:
-                    buffer0tmplst = ['0' for x in xrange(4-len(lastrange))]
-                    buffer0 = ''.join(buffer0tmplst)
-                    unc = '\u' + buffer0 + lastrange
-                else:
-                    buffer0tmplst = ['0' for x in xrange(8-len(lastrange))]
-                    buffer0 = ''.join(buffer0tmplst)
-                    unc = '\U' + buffer0 + lastrange
-
-                laststringunicode = ""
-                if len(unc) > 0:
-                    laststringunicode = unc.decode('unicode_escape')
-
-                if laststringunicode == lastdata:
-                    bflagcheck2 = True
-            else:
-                bflagcheck2 = True
-
-            datacheck = bflagcheck1 and bflagcheck2
-    except:
-        err = str(sys.exc_info()[1]).replace("\n", "")
-        logging.warning(err)
-    return datacheck
 
 def OpenImage(imagefilepath):
     try:        
@@ -415,7 +230,7 @@ def ClearEink():
     IT8951_Cmd_DisplayArea(0, 0, gulPanelW, gulPanelH, 2, (Sys_info.uiImageBufBase), 1)
 
     # set full white
-    srcW = "\xFF" * (gulPanelW*gulPanelH)
+    srcW = b"\xFF" * (gulPanelW*gulPanelH)
     IT8951_Cmd_LoadImageArea(srcW, (Sys_info.uiImageBufBase), 0, 0, gulPanelW, gulPanelH, gulPanelW, gulPanelH)
     IT8951_Cmd_DisplayArea(0, 0, gulPanelW, gulPanelH, 2, (Sys_info.uiImageBufBase), 1)
 
@@ -463,7 +278,7 @@ def LoadOCRAndDisplayOCROnEink(imagefilepath=None):
         IT8951_Cmd_DisplayArea(0, 0, gulPanelW, gulPanelH, 0, (Sys_info.uiImageBufBase), 1)
 
         # set full white
-        srcW = "\xFF" * (gulPanelW * gulPanelH)
+        srcW = b"\xFF" * (gulPanelW * gulPanelH)
         IT8951_Cmd_LoadImageArea(srcW, (Sys_info.uiImageBufBase), 0, 0, gulPanelW, gulPanelH, gulPanelW, gulPanelH)
         IT8951_Cmd_DisplayArea(0, 0, gulPanelW, gulPanelH, 2, (Sys_info.uiImageBufBase), 1)
 
@@ -473,10 +288,10 @@ def LoadOCRAndDisplayOCROnEink(imagefilepath=None):
 
         # load in image
         # [Nam Nguyen, 18-Oct-2019] Currently use coordinate 600, 300.
-        IT8951_Cmd_LoadImageArea(imstr, (Sys_info.uiImageBufBase), 600,300 , im.width, im.height, gulPanelW, gulPanelH)
+        IT8951_Cmd_LoadImageArea(imstr, (Sys_info.uiImageBufBase), 600,450 , im.width, im.height, gulPanelW, gulPanelH)
 
         # display loaded image
-        IT8951_Cmd_DisplayArea(600, 300, im.width, im.height, 2, (Sys_info.uiImageBufBase), 1)
+        IT8951_Cmd_DisplayArea(600, 450, im.width, im.height, 2, (Sys_info.uiImageBufBase), 1)
 
         IT8951_CloseDevice()
     except:

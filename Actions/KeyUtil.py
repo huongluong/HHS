@@ -1,53 +1,57 @@
 # -*- coding: utf-8 -*-
 # Implemented By: Hoai Nam
 # Implemented Date: 08-Apr-2015
-import SendKeys
-import win32api, win32con
+import pyautogui
+#import win32api, win32con
 import logging
 import time
 import datetime
 import sys
 
 #############################################################
-class KeyUtil():
+import win32api
+import win32con
+
+
+class KeyUtil:
     def Copy(self):
         try:
-            SendKeys.SendKeys('^(c)')
+            pyautogui.hotkey('ctrl','c')
         except:
             err = str(sys.exc_info()[1]).replace("\n", "")
             logging.warning(err)
     
     def SelectAll(self):
         try:
-            SendKeys.SendKeys('^(a)')
+            pyautogui.hotkey('ctrl','a')
         except:
             err = str(sys.exc_info()[1]).replace("\n", "")
             logging.warning(err)
     
     def SelectAll2(self):
         try:
-            SendKeys.SendKeys('^+{END}')            
+            pyautogui.hotkey('ctrl','end')
         except:
             err = str(sys.exc_info()[1]).replace("\n", "")
             logging.warning(err)
     
     def Copy2(self):
         try:
-            SendKeys.SendKeys('^{INSERT}')            
+            pyautogui.hotkey('ctrl','insert')
         except:
             err = str(sys.exc_info()[1]).replace("\n", "")
             logging.warning(err)
             
     def BackHome(self):
         try:
-            SendKeys.SendKeys('^{HOME}')
+            pyautogui.hotkey('ctrl','home')
         except:
             err = str(sys.exc_info()[1]).replace("\n", "")
             logging.warning(err)
     
-    def Type(self, data):
+    def Type(data):
         try:
-            SendKeys.SendKeys(data)
+            pyautogui.write(data)
         except:
             err = str(sys.exc_info()[1]).replace("\n", "")
             logging.warning(err)
@@ -58,10 +62,10 @@ class KeyUtil():
     def SetCaplock(self, iset=1):
         # enable caplock
         if self.IsCapsLockOn() == 0 and iset == 1:
-            SendKeys.SendKeys("{CAPSLOCK}")
+            pyautogui.press('capslock')
         # disable caplock
         elif self.IsCapsLockOn() == 1 and iset == 0:
-            SendKeys.SendKeys("{CAPSLOCK}")
+            pyautogui.press('capslock')
     
     # get numlock state
     def IsNumLockOn(self):
@@ -72,7 +76,11 @@ class KeyUtil():
     def SetNumlock(self, iset=1):
         # enable numlock
         if self.IsNumLockOn() == 0 and iset == 1:
-            SendKeys.SendKeys("{NUMLOCK}")
+            pyautogui.press('numlock')
         # disable numlock
         elif self.IsNumLockOn() == 1 and iset == 0:
-            SendKeys.SendKeys("{NUMLOCK}")
+            pyautogui.press('numlock')
+
+#if __name__ == '__main__':
+#    print("Test class KeyUtil")
+

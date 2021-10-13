@@ -5,6 +5,8 @@
 # Using file   : C:\Keyboard\CountryMode\Data\SettingImageCapture.xls
 #############################################################
 import sys
+
+from Actions.parselog2 import ParseLog
 libsfolder = "C:\\HHS\\Actions\\"
 if libsfolder not in sys.path: sys.path.append(libsfolder)
 import serial
@@ -580,4 +582,4 @@ if __name__ == '__main__':
                                                        imgType)
                i = i + 1
     ser.close()
-    parselog2.ParseLog(logfilepath)
+    ParseLog(logfilepath);

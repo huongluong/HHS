@@ -3,12 +3,9 @@
 # This use for parse log Image Capture
 
 import os.path
-
 import os
 
-class parselog2():
-
-    def ParseLog(filepath):
+def ParseLog(filepath):
         # set temp excel file
         # Don't directly write to excel file because unicode format will be lost
         # tempfile = filepath.replace(".txt", "_Analyzed.xls")
@@ -48,7 +45,7 @@ class parselog2():
 
             # write temp file
             # write header
-            headerfile = "TESTCASE NAME \tIMAGE TYPE \tRESULT"
+            headerfile = "TESTCASE NAME \tIMAGE TYPE \tTIME(s) \tRESULT"
             # f = open(tempfile, 'a')
             f = open(tempfile, 'a')
 
@@ -83,9 +80,10 @@ class parselog2():
                     elif tcName == 'HOST_CMD_MULTIPLE_CAPTURE_ON_DECODE_NO_HANDSHAKE': tcName = 'Multiple Capture on Decode without HandShake'
                     imgType = wordList[11][:(len(wordList[11])-1)]  #strip \n
                     result = wordList[7]
-                    line = tcName+'\t'+ imgType + '\t' + result
+                    time = wordList[14][:(len(wordList[14])-2)]
+                    line = tcName+'\t'+ imgType + '\t' + time + '\t' + result
                     f.writelines("%s\n" % line)
             else:
                 f.writelines("This log file content unexpected structure START SCENARIO <> END SCENARIO, so can not parse this file")
-    #if __name__ == '__main__':
-    #    ParseLog("ImageCaptureLog_17082021_1656.txt")
+#if __name__ == '__main__':
+#    ParseLog("C:\\HHS\\Logs\\ImageCaptureLog_05102021_1702.txt")

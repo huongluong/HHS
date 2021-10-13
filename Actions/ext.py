@@ -1,7 +1,7 @@
 import sys
 import Common
 import paramiko
-import ssh
+#import ssh
 import logging
 from subprocess import Popen, PIPE, STDOUT
 import os
@@ -16,7 +16,7 @@ class Ext():
             self.dictinfo = {'ip': '192.168.15.244', 'user': 'root', 'pwd': 'mario', 'clearcmd': '/usr/sbin/eips -c -f', 'displaycmd': '/usr/sbin/eips -g /mnt/us/images/%s', 'imagefolder': '/mnt/us/images/'}
         else:
             # do nothing if exttype = "pc"
-            print "do nothing"
+            print("do nothing")
             
     def open(self):
         handleobj = None
